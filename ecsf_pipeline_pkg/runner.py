@@ -28,13 +28,6 @@ def main():
         config = PipelineConfig()
 
     config.output_dir = args.output_dir
-    if args.no_embeddings:
-        config.run_embeddings = False
-    if args.no_nlp:
-        config.run_nlp = False
-        config.run_ontology = False
-    if args.no_graph:
-        config.run_graph = False
 
     pipeline = AnalyticsPipeline(config)
     summary = pipeline.run()
