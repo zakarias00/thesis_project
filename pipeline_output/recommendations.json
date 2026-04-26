@@ -1,0 +1,1099 @@
+[
+  {
+    "program": "Digital Technologies and Information Security",
+    "recommendations": [
+      {
+        "category": "Framework Coverage",
+        "priority": "Medium",
+        "finding": "Program covers 8/12 ECSF roles",
+        "recommendation": "Consider adding content for: Cybersecurity Educator, Cybersecurity Researcher, Cybersecurity Architect, Cyber Legal, Policy & Compliance Officer",
+        "impact": "Broader workforce preparation"
+      },
+      {
+        "category": "Framework Coverage",
+        "priority": "Medium",
+        "finding": "No coverage for NICE categories: Investigation",
+        "recommendation": "Introduce modules covering these NICE categories",
+        "impact": "International framework alignment"
+      },
+      {
+        "category": "Assessment Methods",
+        "priority": "Medium",
+        "finding": "Assessment diversity = 0.22",
+        "recommendation": "Incorporate CTF exercises, internships, or case studies alongside exams",
+        "impact": "More authentic assessment"
+      }
+    ]
+  },
+  {
+    "program": "Cybersecurity and Data Science",
+    "recommendations": [
+      {
+        "category": "Framework Coverage",
+        "priority": "High",
+        "finding": "Program covers 3/12 ECSF roles",
+        "recommendation": "Consider adding content for: Cybersecurity Educator, Cybersecurity Risk Manager, Cyber Incident Responder, Cybersecurity Researcher, Cybersecurity Architect",
+        "impact": "Broader workforce preparation"
+      },
+      {
+        "category": "Framework Coverage",
+        "priority": "Medium",
+        "finding": "No coverage for NICE categories: Investigation",
+        "recommendation": "Introduce modules covering these NICE categories",
+        "impact": "International framework alignment"
+      },
+      {
+        "category": "Assessment Methods",
+        "priority": "Medium",
+        "finding": "Assessment diversity = 0.11",
+        "recommendation": "Incorporate CTF exercises, internships, or case studies alongside exams",
+        "impact": "More authentic assessment"
+      }
+    ]
+  },
+  {
+    "program": "Information Security",
+    "recommendations": [
+      {
+        "category": "Framework Coverage",
+        "priority": "High",
+        "finding": "Program covers 4/12 ECSF roles",
+        "recommendation": "Consider adding content for: Cybersecurity Educator, Cybersecurity Risk Manager, Cybersecurity Implementer, Cybersecurity Researcher, Penetration Tester",
+        "impact": "Broader workforce preparation"
+      },
+      {
+        "category": "Assessment Methods",
+        "priority": "Medium",
+        "finding": "Assessment diversity = 0.22",
+        "recommendation": "Incorporate CTF exercises, internships, or case studies alongside exams",
+        "impact": "More authentic assessment"
+      },
+      {
+        "category": "Curriculum Freshness",
+        "priority": "Medium",
+        "finding": "Latency score = 0.33",
+        "recommendation": "Update curriculum with modern tech references and recent frameworks",
+        "impact": "Industry relevance"
+      }
+    ]
+  },
+  {
+    "program": "Information and Information Technologies Security",
+    "recommendations": [
+      {
+        "category": "Framework Coverage",
+        "priority": "High",
+        "finding": "Program covers 3/12 ECSF roles",
+        "recommendation": "Consider adding content for: Cybersecurity Educator, Cybersecurity Risk Manager, Cyber Incident Responder, Cybersecurity Implementer, Cybersecurity Researcher",
+        "impact": "Broader workforce preparation"
+      },
+      {
+        "category": "Assessment Methods",
+        "priority": "Medium",
+        "finding": "Assessment diversity = 0.11",
+        "recommendation": "Incorporate CTF exercises, internships, or case studies alongside exams",
+        "impact": "More authentic assessment"
+      },
+      {
+        "category": "Curriculum Freshness",
+        "priority": "Medium",
+        "finding": "Latency score = 0.31",
+        "recommendation": "Update curriculum with modern tech references and recent frameworks",
+        "impact": "Industry relevance"
+      }
+    ]
+  },
+  {
+    "program": "Master in Cybersecurity",
+    "recommendations": [
+      {
+        "category": "Framework Coverage",
+        "priority": "High",
+        "finding": "Program covers 4/12 ECSF roles",
+        "recommendation": "Consider adding content for: Cybersecurity Educator, Chief Information Security Officer (CISO), Cybersecurity Researcher, Cybersecurity Architect, Digital Forensics Investigator",
+        "impact": "Broader workforce preparation"
+      },
+      {
+        "category": "Framework Coverage",
+        "priority": "Medium",
+        "finding": "No coverage for NICE categories: Investigation",
+        "recommendation": "Introduce modules covering these NICE categories",
+        "impact": "International framework alignment"
+      }
+    ]
+  },
+  {
+    "program": "Cybersecurity",
+    "recommendations": [
+      {
+        "category": "Framework Coverage",
+        "priority": "High",
+        "finding": "Program covers 3/12 ECSF roles",
+        "recommendation": "Consider adding content for: Cybersecurity Educator, Chief Information Security Officer (CISO), Cybersecurity Risk Manager, Cyber Incident Responder, Cybersecurity Researcher",
+        "impact": "Broader workforce preparation"
+      },
+      {
+        "category": "Framework Coverage",
+        "priority": "Medium",
+        "finding": "No coverage for NICE categories: Investigation",
+        "recommendation": "Introduce modules covering these NICE categories",
+        "impact": "International framework alignment"
+      },
+      {
+        "category": "Assessment Methods",
+        "priority": "Medium",
+        "finding": "Assessment diversity = 0.11",
+        "recommendation": "Incorporate CTF exercises, internships, or case studies alongside exams",
+        "impact": "More authentic assessment"
+      }
+    ]
+  },
+  {
+    "program": "Bachelor of Cybersecurity",
+    "recommendations": [
+      {
+        "category": "Framework Coverage",
+        "priority": "High",
+        "finding": "Program covers 0/12 ECSF roles",
+        "recommendation": "Consider adding content for: Cybersecurity Educator, Chief Information Security Officer (CISO), Cybersecurity Risk Manager, Cyber Incident Responder, Cybersecurity Implementer",
+        "impact": "Broader workforce preparation"
+      },
+      {
+        "category": "Framework Coverage",
+        "priority": "Medium",
+        "finding": "No coverage for NICE categories: Implementation & Operation, Investigation",
+        "recommendation": "Introduce modules covering these NICE categories",
+        "impact": "International framework alignment"
+      },
+      {
+        "category": "Learning Depth",
+        "priority": "High",
+        "finding": "Bloom depth score = 0.00 (below 0.50)",
+        "recommendation": "Add higher-order activities (design, evaluate, create)",
+        "impact": "Deeper competency acquisition"
+      },
+      {
+        "category": "Assessment Methods",
+        "priority": "Medium",
+        "finding": "Assessment diversity = 0.22",
+        "recommendation": "Incorporate CTF exercises, internships, or case studies alongside exams",
+        "impact": "More authentic assessment"
+      },
+      {
+        "category": "Curriculum Alignment",
+        "priority": "High",
+        "finding": "SOA matrix density = 0.000",
+        "recommendation": "Explicitly map learning outcomes to framework skills",
+        "impact": "Traceability and accreditation readiness"
+      },
+      {
+        "category": "Content Coverage",
+        "priority": "High",
+        "finding": "Overall coverage = 0.23",
+        "recommendation": "Expand curriculum to address more framework items",
+        "impact": "Comprehensive skill development"
+      },
+      {
+        "category": "Curriculum Freshness",
+        "priority": "Medium",
+        "finding": "Latency score = 0.34",
+        "recommendation": "Update curriculum with modern tech references and recent frameworks",
+        "impact": "Industry relevance"
+      }
+    ]
+  },
+  {
+    "program": "Master of Computer Systems, Communication and Security (Information Security Specialization)",
+    "recommendations": [
+      {
+        "category": "Framework Coverage",
+        "priority": "High",
+        "finding": "Program covers 3/12 ECSF roles",
+        "recommendation": "Consider adding content for: Cybersecurity Educator, Chief Information Security Officer (CISO), Cybersecurity Risk Manager, Cybersecurity Researcher, Penetration Tester",
+        "impact": "Broader workforce preparation"
+      },
+      {
+        "category": "Framework Coverage",
+        "priority": "Medium",
+        "finding": "No coverage for NICE categories: Investigation",
+        "recommendation": "Introduce modules covering these NICE categories",
+        "impact": "International framework alignment"
+      },
+      {
+        "category": "Learning Depth",
+        "priority": "High",
+        "finding": "Bloom depth score = 0.48 (below 0.50)",
+        "recommendation": "Add higher-order activities (design, evaluate, create)",
+        "impact": "Deeper competency acquisition"
+      },
+      {
+        "category": "Assessment Methods",
+        "priority": "Medium",
+        "finding": "Assessment diversity = 0.11",
+        "recommendation": "Incorporate CTF exercises, internships, or case studies alongside exams",
+        "impact": "More authentic assessment"
+      }
+    ]
+  },
+  {
+    "program": "University Master in Cybersecurity",
+    "recommendations": [
+      {
+        "category": "Framework Coverage",
+        "priority": "High",
+        "finding": "Program covers 3/12 ECSF roles",
+        "recommendation": "Consider adding content for: Cybersecurity Educator, Chief Information Security Officer (CISO), Cyber Incident Responder, Cybersecurity Implementer, Cybersecurity Researcher",
+        "impact": "Broader workforce preparation"
+      },
+      {
+        "category": "Framework Coverage",
+        "priority": "Medium",
+        "finding": "No coverage for NICE categories: Implementation & Operation, Investigation",
+        "recommendation": "Introduce modules covering these NICE categories",
+        "impact": "International framework alignment"
+      },
+      {
+        "category": "Content Coverage",
+        "priority": "High",
+        "finding": "Overall coverage = 0.22",
+        "recommendation": "Expand curriculum to address more framework items",
+        "impact": "Comprehensive skill development"
+      },
+      {
+        "category": "Curriculum Freshness",
+        "priority": "Medium",
+        "finding": "Latency score = 0.40",
+        "recommendation": "Update curriculum with modern tech references and recent frameworks",
+        "impact": "Industry relevance"
+      }
+    ]
+  },
+  {
+    "program": "Computer Engineering, Cybersecurity and Artificial Intelligence",
+    "recommendations": [
+      {
+        "category": "Framework Coverage",
+        "priority": "Medium",
+        "finding": "Program covers 6/12 ECSF roles",
+        "recommendation": "Consider adding content for: Cybersecurity Educator, Cybersecurity Risk Manager, Cybersecurity Researcher, Cybersecurity Architect, Cyber Legal, Policy & Compliance Officer",
+        "impact": "Broader workforce preparation"
+      },
+      {
+        "category": "Assessment Methods",
+        "priority": "Medium",
+        "finding": "Assessment diversity = 0.11",
+        "recommendation": "Incorporate CTF exercises, internships, or case studies alongside exams",
+        "impact": "More authentic assessment"
+      }
+    ]
+  },
+  {
+    "program": "Master's study programme Cyber Security",
+    "recommendations": [
+      {
+        "category": "Framework Coverage",
+        "priority": "Medium",
+        "finding": "Program covers 9/12 ECSF roles",
+        "recommendation": "Consider adding content for: Chief Information Security Officer (CISO), Digital Forensics Investigator, Cyber Legal, Policy & Compliance Officer",
+        "impact": "Broader workforce preparation"
+      },
+      {
+        "category": "Assessment Methods",
+        "priority": "Medium",
+        "finding": "Assessment diversity = 0.11",
+        "recommendation": "Incorporate CTF exercises, internships, or case studies alongside exams",
+        "impact": "More authentic assessment"
+      }
+    ]
+  },
+  {
+    "program": "Information Security Management",
+    "recommendations": [
+      {
+        "category": "Framework Coverage",
+        "priority": "High",
+        "finding": "Program covers 5/12 ECSF roles",
+        "recommendation": "Consider adding content for: Cybersecurity Educator, Cybersecurity Implementer, Cybersecurity Researcher, Penetration Tester, Cybersecurity Architect",
+        "impact": "Broader workforce preparation"
+      },
+      {
+        "category": "Framework Coverage",
+        "priority": "Medium",
+        "finding": "No coverage for NICE categories: Investigation",
+        "recommendation": "Introduce modules covering these NICE categories",
+        "impact": "International framework alignment"
+      },
+      {
+        "category": "Assessment Methods",
+        "priority": "Medium",
+        "finding": "Assessment diversity = 0.11",
+        "recommendation": "Incorporate CTF exercises, internships, or case studies alongside exams",
+        "impact": "More authentic assessment"
+      },
+      {
+        "category": "Curriculum Freshness",
+        "priority": "Medium",
+        "finding": "Latency score = 0.37",
+        "recommendation": "Update curriculum with modern tech references and recent frameworks",
+        "impact": "Industry relevance"
+      }
+    ]
+  },
+  {
+    "program": "Masters in Information Security",
+    "recommendations": [
+      {
+        "category": "Framework Coverage",
+        "priority": "High",
+        "finding": "Program covers 0/12 ECSF roles",
+        "recommendation": "Consider adding content for: Cybersecurity Educator, Chief Information Security Officer (CISO), Cybersecurity Risk Manager, Cyber Incident Responder, Cybersecurity Implementer",
+        "impact": "Broader workforce preparation"
+      },
+      {
+        "category": "Framework Coverage",
+        "priority": "Medium",
+        "finding": "No coverage for NICE categories: Investigation",
+        "recommendation": "Introduce modules covering these NICE categories",
+        "impact": "International framework alignment"
+      },
+      {
+        "category": "Assessment Methods",
+        "priority": "Medium",
+        "finding": "Assessment diversity = 0.11",
+        "recommendation": "Incorporate CTF exercises, internships, or case studies alongside exams",
+        "impact": "More authentic assessment"
+      },
+      {
+        "category": "Curriculum Freshness",
+        "priority": "Medium",
+        "finding": "Latency score = 0.26",
+        "recommendation": "Update curriculum with modern tech references and recent frameworks",
+        "impact": "Industry relevance"
+      }
+    ]
+  },
+  {
+    "program": "MSc Cybersecurity",
+    "recommendations": [
+      {
+        "category": "Framework Coverage",
+        "priority": "High",
+        "finding": "Program covers 0/12 ECSF roles",
+        "recommendation": "Consider adding content for: Cybersecurity Educator, Chief Information Security Officer (CISO), Cybersecurity Risk Manager, Cyber Incident Responder, Cybersecurity Implementer",
+        "impact": "Broader workforce preparation"
+      },
+      {
+        "category": "Framework Coverage",
+        "priority": "Medium",
+        "finding": "No coverage for NICE categories: Investigation, Design & Development",
+        "recommendation": "Introduce modules covering these NICE categories",
+        "impact": "International framework alignment"
+      },
+      {
+        "category": "Assessment Methods",
+        "priority": "Medium",
+        "finding": "Assessment diversity = 0.22",
+        "recommendation": "Incorporate CTF exercises, internships, or case studies alongside exams",
+        "impact": "More authentic assessment"
+      },
+      {
+        "category": "Content Coverage",
+        "priority": "High",
+        "finding": "Overall coverage = 0.21",
+        "recommendation": "Expand curriculum to address more framework items",
+        "impact": "Comprehensive skill development"
+      },
+      {
+        "category": "Curriculum Freshness",
+        "priority": "Medium",
+        "finding": "Latency score = 0.30",
+        "recommendation": "Update curriculum with modern tech references and recent frameworks",
+        "impact": "Industry relevance"
+      }
+    ]
+  },
+  {
+    "program": "Advanced Master of Cybersecurity",
+    "recommendations": [
+      {
+        "category": "Framework Coverage",
+        "priority": "High",
+        "finding": "Program covers 5/12 ECSF roles",
+        "recommendation": "Consider adding content for: Cybersecurity Educator, Cyber Incident Responder, Cybersecurity Implementer, Cybersecurity Researcher, Digital Forensics Investigator",
+        "impact": "Broader workforce preparation"
+      },
+      {
+        "category": "Assessment Methods",
+        "priority": "Medium",
+        "finding": "Assessment diversity = 0.22",
+        "recommendation": "Incorporate CTF exercises, internships, or case studies alongside exams",
+        "impact": "More authentic assessment"
+      }
+    ]
+  },
+  {
+    "program": "MSc Cybersecurity",
+    "recommendations": [
+      {
+        "category": "Framework Coverage",
+        "priority": "High",
+        "finding": "Program covers 4/12 ECSF roles",
+        "recommendation": "Consider adding content for: Cybersecurity Educator, Cybersecurity Risk Manager, Cyber Incident Responder, Cybersecurity Implementer, Cybersecurity Researcher",
+        "impact": "Broader workforce preparation"
+      },
+      {
+        "category": "Assessment Methods",
+        "priority": "Medium",
+        "finding": "Assessment diversity = 0.11",
+        "recommendation": "Incorporate CTF exercises, internships, or case studies alongside exams",
+        "impact": "More authentic assessment"
+      }
+    ]
+  },
+  {
+    "program": "Cyber Security and Resilience",
+    "recommendations": [
+      {
+        "category": "Framework Coverage",
+        "priority": "High",
+        "finding": "Program covers 0/12 ECSF roles",
+        "recommendation": "Consider adding content for: Cybersecurity Educator, Chief Information Security Officer (CISO), Cybersecurity Risk Manager, Cyber Incident Responder, Cybersecurity Implementer",
+        "impact": "Broader workforce preparation"
+      },
+      {
+        "category": "Framework Coverage",
+        "priority": "Medium",
+        "finding": "No coverage for NICE categories: Implementation & Operation, Investigation",
+        "recommendation": "Introduce modules covering these NICE categories",
+        "impact": "International framework alignment"
+      },
+      {
+        "category": "Learning Depth",
+        "priority": "High",
+        "finding": "Bloom depth score = 0.00 (below 0.50)",
+        "recommendation": "Add higher-order activities (design, evaluate, create)",
+        "impact": "Deeper competency acquisition"
+      },
+      {
+        "category": "Assessment Methods",
+        "priority": "Medium",
+        "finding": "Assessment diversity = 0.11",
+        "recommendation": "Incorporate CTF exercises, internships, or case studies alongside exams",
+        "impact": "More authentic assessment"
+      },
+      {
+        "category": "Content Coverage",
+        "priority": "High",
+        "finding": "Overall coverage = 0.19",
+        "recommendation": "Expand curriculum to address more framework items",
+        "impact": "Comprehensive skill development"
+      },
+      {
+        "category": "Curriculum Freshness",
+        "priority": "Medium",
+        "finding": "Latency score = 0.34",
+        "recommendation": "Update curriculum with modern tech references and recent frameworks",
+        "impact": "Industry relevance"
+      }
+    ]
+  },
+  {
+    "program": "Information Security",
+    "recommendations": [
+      {
+        "category": "Framework Coverage",
+        "priority": "High",
+        "finding": "Program covers 0/12 ECSF roles",
+        "recommendation": "Consider adding content for: Cybersecurity Educator, Chief Information Security Officer (CISO), Cybersecurity Risk Manager, Cyber Incident Responder, Cybersecurity Implementer",
+        "impact": "Broader workforce preparation"
+      },
+      {
+        "category": "Framework Coverage",
+        "priority": "Medium",
+        "finding": "No coverage for NICE categories: Investigation",
+        "recommendation": "Introduce modules covering these NICE categories",
+        "impact": "International framework alignment"
+      },
+      {
+        "category": "Assessment Methods",
+        "priority": "Medium",
+        "finding": "Assessment diversity = 0.11",
+        "recommendation": "Incorporate CTF exercises, internships, or case studies alongside exams",
+        "impact": "More authentic assessment"
+      },
+      {
+        "category": "Content Coverage",
+        "priority": "High",
+        "finding": "Overall coverage = 0.21",
+        "recommendation": "Expand curriculum to address more framework items",
+        "impact": "Comprehensive skill development"
+      },
+      {
+        "category": "Curriculum Freshness",
+        "priority": "Medium",
+        "finding": "Latency score = 0.27",
+        "recommendation": "Update curriculum with modern tech references and recent frameworks",
+        "impact": "Industry relevance"
+      }
+    ]
+  },
+  {
+    "program": "Artificial Intelligence & Cybersecurity",
+    "recommendations": [
+      {
+        "category": "Framework Coverage",
+        "priority": "High",
+        "finding": "Program covers 3/12 ECSF roles",
+        "recommendation": "Consider adding content for: Cybersecurity Educator, Chief Information Security Officer (CISO), Cybersecurity Risk Manager, Cyber Incident Responder, Penetration Tester",
+        "impact": "Broader workforce preparation"
+      },
+      {
+        "category": "Framework Coverage",
+        "priority": "Medium",
+        "finding": "No coverage for NICE categories: Implementation & Operation, Investigation",
+        "recommendation": "Introduce modules covering these NICE categories",
+        "impact": "International framework alignment"
+      },
+      {
+        "category": "Assessment Methods",
+        "priority": "Medium",
+        "finding": "Assessment diversity = 0.11",
+        "recommendation": "Incorporate CTF exercises, internships, or case studies alongside exams",
+        "impact": "More authentic assessment"
+      },
+      {
+        "category": "Curriculum Alignment",
+        "priority": "High",
+        "finding": "SOA matrix density = 0.000",
+        "recommendation": "Explicitly map learning outcomes to framework skills",
+        "impact": "Traceability and accreditation readiness"
+      },
+      {
+        "category": "Content Coverage",
+        "priority": "High",
+        "finding": "Overall coverage = 0.23",
+        "recommendation": "Expand curriculum to address more framework items",
+        "impact": "Comprehensive skill development"
+      }
+    ]
+  },
+  {
+    "program": "Networking, Infrastructure and Cybersecurity (NICS)",
+    "recommendations": [
+      {
+        "category": "Framework Coverage",
+        "priority": "High",
+        "finding": "Program covers 0/12 ECSF roles",
+        "recommendation": "Consider adding content for: Cybersecurity Educator, Chief Information Security Officer (CISO), Cybersecurity Risk Manager, Cyber Incident Responder, Cybersecurity Implementer",
+        "impact": "Broader workforce preparation"
+      },
+      {
+        "category": "Assessment Methods",
+        "priority": "Medium",
+        "finding": "Assessment diversity = 0.11",
+        "recommendation": "Incorporate CTF exercises, internships, or case studies alongside exams",
+        "impact": "More authentic assessment"
+      },
+      {
+        "category": "Content Coverage",
+        "priority": "High",
+        "finding": "Overall coverage = 0.23",
+        "recommendation": "Expand curriculum to address more framework items",
+        "impact": "Comprehensive skill development"
+      },
+      {
+        "category": "Curriculum Freshness",
+        "priority": "Medium",
+        "finding": "Latency score = 0.37",
+        "recommendation": "Update curriculum with modern tech references and recent frameworks",
+        "impact": "Industry relevance"
+      }
+    ]
+  },
+  {
+    "program": "Cybersecurity (Engineering)",
+    "recommendations": [
+      {
+        "category": "Framework Coverage",
+        "priority": "High",
+        "finding": "Program covers 5/12 ECSF roles",
+        "recommendation": "Consider adding content for: Cybersecurity Educator, Cybersecurity Researcher, Penetration Tester, Digital Forensics Investigator, Cyber Legal, Policy & Compliance Officer",
+        "impact": "Broader workforce preparation"
+      },
+      {
+        "category": "Assessment Methods",
+        "priority": "Medium",
+        "finding": "Assessment diversity = 0.22",
+        "recommendation": "Incorporate CTF exercises, internships, or case studies alongside exams",
+        "impact": "More authentic assessment"
+      }
+    ]
+  },
+  {
+    "program": "Information & Cyber Security",
+    "recommendations": [
+      {
+        "category": "Framework Coverage",
+        "priority": "High",
+        "finding": "Program covers 2/12 ECSF roles",
+        "recommendation": "Consider adding content for: Cybersecurity Educator, Chief Information Security Officer (CISO), Cybersecurity Risk Manager, Cybersecurity Implementer, Cybersecurity Researcher",
+        "impact": "Broader workforce preparation"
+      },
+      {
+        "category": "Assessment Methods",
+        "priority": "Medium",
+        "finding": "Assessment diversity = 0.11",
+        "recommendation": "Incorporate CTF exercises, internships, or case studies alongside exams",
+        "impact": "More authentic assessment"
+      }
+    ]
+  },
+  {
+    "program": "Master of Research in Cybersecurity",
+    "recommendations": [
+      {
+        "category": "Framework Coverage",
+        "priority": "High",
+        "finding": "Program covers 2/12 ECSF roles",
+        "recommendation": "Consider adding content for: Cybersecurity Educator, Chief Information Security Officer (CISO), Cybersecurity Risk Manager, Cyber Incident Responder, Cybersecurity Researcher",
+        "impact": "Broader workforce preparation"
+      },
+      {
+        "category": "Assessment Methods",
+        "priority": "Medium",
+        "finding": "Assessment diversity = 0.22",
+        "recommendation": "Incorporate CTF exercises, internships, or case studies alongside exams",
+        "impact": "More authentic assessment"
+      },
+      {
+        "category": "Curriculum Freshness",
+        "priority": "Medium",
+        "finding": "Latency score = 0.35",
+        "recommendation": "Update curriculum with modern tech references and recent frameworks",
+        "impact": "Industry relevance"
+      }
+    ]
+  },
+  {
+    "program": "Information Security Technology track",
+    "recommendations": [
+      {
+        "category": "Framework Coverage",
+        "priority": "High",
+        "finding": "Program covers 1/12 ECSF roles",
+        "recommendation": "Consider adding content for: Cybersecurity Educator, Chief Information Security Officer (CISO), Cybersecurity Risk Manager, Cyber Incident Responder, Cybersecurity Implementer",
+        "impact": "Broader workforce preparation"
+      },
+      {
+        "category": "Framework Coverage",
+        "priority": "Medium",
+        "finding": "No coverage for NICE categories: Implementation & Operation, Investigation",
+        "recommendation": "Introduce modules covering these NICE categories",
+        "impact": "International framework alignment"
+      },
+      {
+        "category": "Learning Depth",
+        "priority": "High",
+        "finding": "Bloom depth score = 0.19 (below 0.50)",
+        "recommendation": "Add higher-order activities (design, evaluate, create)",
+        "impact": "Deeper competency acquisition"
+      },
+      {
+        "category": "Assessment Methods",
+        "priority": "Medium",
+        "finding": "Assessment diversity = 0.22",
+        "recommendation": "Incorporate CTF exercises, internships, or case studies alongside exams",
+        "impact": "More authentic assessment"
+      },
+      {
+        "category": "Curriculum Freshness",
+        "priority": "Medium",
+        "finding": "Latency score = 0.34",
+        "recommendation": "Update curriculum with modern tech references and recent frameworks",
+        "impact": "Industry relevance"
+      }
+    ]
+  },
+  {
+    "program": "IT & Mobile Security",
+    "recommendations": [
+      {
+        "category": "Framework Coverage",
+        "priority": "High",
+        "finding": "Program covers 3/12 ECSF roles",
+        "recommendation": "Consider adding content for: Cybersecurity Educator, Cybersecurity Risk Manager, Cyber Incident Responder, Cybersecurity Implementer, Cybersecurity Researcher",
+        "impact": "Broader workforce preparation"
+      },
+      {
+        "category": "Framework Coverage",
+        "priority": "Medium",
+        "finding": "No coverage for NICE categories: Investigation",
+        "recommendation": "Introduce modules covering these NICE categories",
+        "impact": "International framework alignment"
+      },
+      {
+        "category": "Curriculum Freshness",
+        "priority": "Medium",
+        "finding": "Latency score = 0.23",
+        "recommendation": "Update curriculum with modern tech references and recent frameworks",
+        "impact": "Industry relevance"
+      }
+    ]
+  },
+  {
+    "program": "Master's Degree in Cybersecurity and Data Intelligence",
+    "recommendations": [
+      {
+        "category": "Framework Coverage",
+        "priority": "High",
+        "finding": "Program covers 4/12 ECSF roles",
+        "recommendation": "Consider adding content for: Cybersecurity Risk Manager, Chief Information Security Officer (CISO), Cyber Incident Responder, Penetration Tester, Cybersecurity Architect",
+        "impact": "Broader workforce preparation"
+      },
+      {
+        "category": "Assessment Methods",
+        "priority": "Medium",
+        "finding": "Assessment diversity = 0.22",
+        "recommendation": "Incorporate CTF exercises, internships, or case studies alongside exams",
+        "impact": "More authentic assessment"
+      },
+      {
+        "category": "Curriculum Freshness",
+        "priority": "Medium",
+        "finding": "Latency score = 0.40",
+        "recommendation": "Update curriculum with modern tech references and recent frameworks",
+        "impact": "Industry relevance"
+      }
+    ]
+  },
+  {
+    "program": "Cyberschool: Mathematics of information theory, cryptography",
+    "recommendations": [
+      {
+        "category": "Framework Coverage",
+        "priority": "High",
+        "finding": "Program covers 3/12 ECSF roles",
+        "recommendation": "Consider adding content for: Cybersecurity Risk Manager, Chief Information Security Officer (CISO), Cyber Incident Responder, Penetration Tester, Cybersecurity Architect",
+        "impact": "Broader workforce preparation"
+      },
+      {
+        "category": "Framework Coverage",
+        "priority": "Medium",
+        "finding": "No coverage for NICE categories: Investigation",
+        "recommendation": "Introduce modules covering these NICE categories",
+        "impact": "International framework alignment"
+      },
+      {
+        "category": "Assessment Methods",
+        "priority": "Medium",
+        "finding": "Assessment diversity = 0.22",
+        "recommendation": "Incorporate CTF exercises, internships, or case studies alongside exams",
+        "impact": "More authentic assessment"
+      },
+      {
+        "category": "Content Coverage",
+        "priority": "High",
+        "finding": "Overall coverage = 0.30",
+        "recommendation": "Expand curriculum to address more framework items",
+        "impact": "Comprehensive skill development"
+      },
+      {
+        "category": "Curriculum Freshness",
+        "priority": "Medium",
+        "finding": "Latency score = 0.28",
+        "recommendation": "Update curriculum with modern tech references and recent frameworks",
+        "impact": "Industry relevance"
+      }
+    ]
+  },
+  {
+    "program": "Master in Cybersecurity Management",
+    "recommendations": [
+      {
+        "category": "Framework Coverage",
+        "priority": "Medium",
+        "finding": "Program covers 6/12 ECSF roles",
+        "recommendation": "Consider adding content for: Cybersecurity Educator, Cyber Incident Responder, Cybersecurity Implementer, Digital Forensics Investigator, Cyber Legal, Policy & Compliance Officer",
+        "impact": "Broader workforce preparation"
+      },
+      {
+        "category": "Assessment Methods",
+        "priority": "Medium",
+        "finding": "Assessment diversity = 0.00",
+        "recommendation": "Incorporate CTF exercises, internships, or case studies alongside exams",
+        "impact": "More authentic assessment"
+      }
+    ]
+  },
+  {
+    "program": "Professional master's degree in Cybersecurity Management",
+    "recommendations": [
+      {
+        "category": "Framework Coverage",
+        "priority": "High",
+        "finding": "Program covers 1/12 ECSF roles",
+        "recommendation": "Consider adding content for: Cybersecurity Educator, Cybersecurity Risk Manager, Cyber Incident Responder, Cybersecurity Implementer, Cybersecurity Researcher",
+        "impact": "Broader workforce preparation"
+      },
+      {
+        "category": "Framework Coverage",
+        "priority": "Medium",
+        "finding": "No coverage for NICE categories: Investigation",
+        "recommendation": "Introduce modules covering these NICE categories",
+        "impact": "International framework alignment"
+      },
+      {
+        "category": "Learning Depth",
+        "priority": "High",
+        "finding": "Bloom depth score = 0.47 (below 0.50)",
+        "recommendation": "Add higher-order activities (design, evaluate, create)",
+        "impact": "Deeper competency acquisition"
+      },
+      {
+        "category": "Assessment Methods",
+        "priority": "Medium",
+        "finding": "Assessment diversity = 0.11",
+        "recommendation": "Incorporate CTF exercises, internships, or case studies alongside exams",
+        "impact": "More authentic assessment"
+      },
+      {
+        "category": "Curriculum Freshness",
+        "priority": "Medium",
+        "finding": "Latency score = 0.34",
+        "recommendation": "Update curriculum with modern tech references and recent frameworks",
+        "impact": "Industry relevance"
+      }
+    ]
+  },
+  {
+    "program": "Master's Degree in Information Technology, Cyber Security",
+    "recommendations": [
+      {
+        "category": "Framework Coverage",
+        "priority": "High",
+        "finding": "Program covers 0/12 ECSF roles",
+        "recommendation": "Consider adding content for: Cybersecurity Educator, Chief Information Security Officer (CISO), Cybersecurity Risk Manager, Cyber Incident Responder, Cybersecurity Implementer",
+        "impact": "Broader workforce preparation"
+      },
+      {
+        "category": "Framework Coverage",
+        "priority": "Medium",
+        "finding": "No coverage for NICE categories: Implementation & Operation, Investigation",
+        "recommendation": "Introduce modules covering these NICE categories",
+        "impact": "International framework alignment"
+      },
+      {
+        "category": "Learning Depth",
+        "priority": "High",
+        "finding": "Bloom depth score = 0.00 (below 0.50)",
+        "recommendation": "Add higher-order activities (design, evaluate, create)",
+        "impact": "Deeper competency acquisition"
+      },
+      {
+        "category": "Assessment Methods",
+        "priority": "Medium",
+        "finding": "Assessment diversity = 0.11",
+        "recommendation": "Incorporate CTF exercises, internships, or case studies alongside exams",
+        "impact": "More authentic assessment"
+      },
+      {
+        "category": "Content Coverage",
+        "priority": "High",
+        "finding": "Overall coverage = 0.09",
+        "recommendation": "Expand curriculum to address more framework items",
+        "impact": "Comprehensive skill development"
+      },
+      {
+        "category": "Curriculum Freshness",
+        "priority": "Medium",
+        "finding": "Latency score = 0.24",
+        "recommendation": "Update curriculum with modern tech references and recent frameworks",
+        "impact": "Industry relevance"
+      }
+    ]
+  },
+  {
+    "program": "Master of Electrical Engineering (ICT Security and Networks)",
+    "recommendations": [
+      {
+        "category": "Framework Coverage",
+        "priority": "High",
+        "finding": "Program covers 4/12 ECSF roles",
+        "recommendation": "Consider adding content for: Cybersecurity Educator, Chief Information Security Officer (CISO), Cybersecurity Risk Manager, Penetration Tester, Digital Forensics Investigator",
+        "impact": "Broader workforce preparation"
+      },
+      {
+        "category": "Framework Coverage",
+        "priority": "Medium",
+        "finding": "No coverage for NICE categories: Investigation",
+        "recommendation": "Introduce modules covering these NICE categories",
+        "impact": "International framework alignment"
+      },
+      {
+        "category": "Assessment Methods",
+        "priority": "Medium",
+        "finding": "Assessment diversity = 0.00",
+        "recommendation": "Incorporate CTF exercises, internships, or case studies alongside exams",
+        "impact": "More authentic assessment"
+      },
+      {
+        "category": "Curriculum Alignment",
+        "priority": "High",
+        "finding": "SOA matrix density = 0.000",
+        "recommendation": "Explicitly map learning outcomes to framework skills",
+        "impact": "Traceability and accreditation readiness"
+      },
+      {
+        "category": "Curriculum Freshness",
+        "priority": "Medium",
+        "finding": "Latency score = 0.40",
+        "recommendation": "Update curriculum with modern tech references and recent frameworks",
+        "impact": "Industry relevance"
+      }
+    ]
+  },
+  {
+    "program": "Computer engineering - second degree study, specialization cybersecurity and cloud technologies",
+    "recommendations": [
+      {
+        "category": "Framework Coverage",
+        "priority": "High",
+        "finding": "Program covers 5/12 ECSF roles",
+        "recommendation": "Consider adding content for: Cybersecurity Educator, Chief Information Security Officer (CISO), Cybersecurity Risk Manager, Cyber Incident Responder, Digital Forensics Investigator",
+        "impact": "Broader workforce preparation"
+      },
+      {
+        "category": "Framework Coverage",
+        "priority": "Medium",
+        "finding": "No coverage for NICE categories: Investigation",
+        "recommendation": "Introduce modules covering these NICE categories",
+        "impact": "International framework alignment"
+      },
+      {
+        "category": "Assessment Methods",
+        "priority": "Medium",
+        "finding": "Assessment diversity = 0.11",
+        "recommendation": "Incorporate CTF exercises, internships, or case studies alongside exams",
+        "impact": "More authentic assessment"
+      }
+    ]
+  },
+  {
+    "program": "Software Engineering specialisation Cybersecurity",
+    "recommendations": [
+      {
+        "category": "Framework Coverage",
+        "priority": "High",
+        "finding": "Program covers 2/12 ECSF roles",
+        "recommendation": "Consider adding content for: Cybersecurity Educator, Chief Information Security Officer (CISO), Cybersecurity Risk Manager, Cyber Incident Responder, Cybersecurity Researcher",
+        "impact": "Broader workforce preparation"
+      },
+      {
+        "category": "Framework Coverage",
+        "priority": "Medium",
+        "finding": "No coverage for NICE categories: Investigation",
+        "recommendation": "Introduce modules covering these NICE categories",
+        "impact": "International framework alignment"
+      },
+      {
+        "category": "Content Coverage",
+        "priority": "High",
+        "finding": "Overall coverage = 0.23",
+        "recommendation": "Expand curriculum to address more framework items",
+        "impact": "Comprehensive skill development"
+      }
+    ]
+  },
+  {
+    "program": "Master in Engineering, Cybersecurity",
+    "recommendations": [
+      {
+        "category": "Framework Coverage",
+        "priority": "High",
+        "finding": "Program covers 4/12 ECSF roles",
+        "recommendation": "Consider adding content for: Cybersecurity Educator, Chief Information Security Officer (CISO), Cyber Incident Responder, Cybersecurity Implementer, Cybersecurity Researcher",
+        "impact": "Broader workforce preparation"
+      },
+      {
+        "category": "Framework Coverage",
+        "priority": "Medium",
+        "finding": "No coverage for NICE categories: Investigation",
+        "recommendation": "Introduce modules covering these NICE categories",
+        "impact": "International framework alignment"
+      },
+      {
+        "category": "Assessment Methods",
+        "priority": "Medium",
+        "finding": "Assessment diversity = 0.00",
+        "recommendation": "Incorporate CTF exercises, internships, or case studies alongside exams",
+        "impact": "More authentic assessment"
+      },
+      {
+        "category": "Curriculum Freshness",
+        "priority": "Medium",
+        "finding": "Latency score = 0.36",
+        "recommendation": "Update curriculum with modern tech references and recent frameworks",
+        "impact": "Industry relevance"
+      }
+    ]
+  },
+  {
+    "program": "Digital Infrastructure and Cyber Security",
+    "recommendations": [
+      {
+        "category": "Framework Coverage",
+        "priority": "High",
+        "finding": "Program covers 3/12 ECSF roles",
+        "recommendation": "Consider adding content for: Cybersecurity Educator, Chief Information Security Officer (CISO), Cybersecurity Risk Manager, Cyber Incident Responder, Penetration Tester",
+        "impact": "Broader workforce preparation"
+      },
+      {
+        "category": "Assessment Methods",
+        "priority": "Medium",
+        "finding": "Assessment diversity = 0.11",
+        "recommendation": "Incorporate CTF exercises, internships, or case studies alongside exams",
+        "impact": "More authentic assessment"
+      }
+    ]
+  },
+  {
+    "program": "CyberMACS- Erasmus Mundus Joint Master\u2019s Degree (EMJM) Programme in Applied Cybersecurity",
+    "recommendations": [
+      {
+        "category": "Framework Coverage",
+        "priority": "High",
+        "finding": "Program covers 3/12 ECSF roles",
+        "recommendation": "Consider adding content for: Cybersecurity Educator, Chief Information Security Officer (CISO), Cyber Incident Responder, Penetration Tester, Cybersecurity Architect",
+        "impact": "Broader workforce preparation"
+      },
+      {
+        "category": "Framework Coverage",
+        "priority": "Medium",
+        "finding": "No coverage for NICE categories: Implementation & Operation, Investigation, Design & Development",
+        "recommendation": "Introduce modules covering these NICE categories",
+        "impact": "International framework alignment"
+      },
+      {
+        "category": "Learning Depth",
+        "priority": "High",
+        "finding": "Bloom depth score = 0.48 (below 0.50)",
+        "recommendation": "Add higher-order activities (design, evaluate, create)",
+        "impact": "Deeper competency acquisition"
+      },
+      {
+        "category": "Assessment Methods",
+        "priority": "Medium",
+        "finding": "Assessment diversity = 0.11",
+        "recommendation": "Incorporate CTF exercises, internships, or case studies alongside exams",
+        "impact": "More authentic assessment"
+      },
+      {
+        "category": "Content Coverage",
+        "priority": "High",
+        "finding": "Overall coverage = 0.22",
+        "recommendation": "Expand curriculum to address more framework items",
+        "impact": "Comprehensive skill development"
+      }
+    ]
+  }
+]

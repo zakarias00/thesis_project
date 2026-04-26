@@ -1,0 +1,37 @@
+program,university,country,overall_coverage,items_covered,items_total,intra_redundancy,depth_score,depth_index,highest_bloom,n_bloom_levels,latency_score,age_freshness,tech_modernity,soa_density,assessment_diversity,composite_score,grade,overall_breadth,overall_depth,coherence_score,immersion_index,embedding_mean_score,n_outcomes,n_assessments
+"Computer Engineering, Cybersecurity and Artificial Intelligence",University of Cagliari,Italy,0.5681,267,470,0.0315,0.7722,0.7222,Create,2,0.45,0.6,0.2,1.0,0.1111,0.7592,B,0.201,0.258,0.27,0.0,,0,1
+MSc Cybersecurity,University College Dublin,Ireland,0.4574,215,470,0.0365,0.8,0.75,Create,2,0.475,0.8,0.1,1.0,0.1111,0.7401,B,0.109,0.199,0.52,0.3,,1,1
+Cybersecurity (Engineering),Politcnico di Torino,Italy,0.483,227,470,0.0367,0.675,0.625,Create,2,0.49,0.85,0.1,0.989,0.2222,0.721,B,0.186,0.225,0.5,0.0,,4,2
+Cybersecurity,KTH Royal Institute of Technology,Sweden,0.383,180,470,0.0488,0.7417,0.6667,Create,3,0.475,0.8,0.1,1.0,0.1111,0.708,B,0.048,0.176,0.77,0.0,,1,1
+Digital Infrastructure and Cyber Security,Norwegian University of Science and Technology (NTNU),Norway,0.4596,216,470,0.0386,0.6167,0.5417,Create,3,0.475,0.8,0.1,1.0,0.1111,0.7037,B,0.099,0.215,0.5,0.0,,1,1
+Master of Research in Cybersecurity,Universidad de León,Spain,0.517,243,470,0.0411,0.6306,0.5556,Evaluate,3,0.35,0.5,0.0,1.0,0.2222,0.7017,B,0.131,0.272,0.5,0.306,,0,2
+Master's Degree in Cybersecurity and Data Intelligence,Universidad de La Laguna,Spain,0.4979,234,470,0.0338,0.8083,0.7333,Create,3,0.395,0.65,0.0,0.8356,0.2222,0.6992,B,0.095,0.206,0.5,0.281,,2,2
+"Master of Computer Systems, Communication and Security (Information Security Specialization)",Masaryk University,Czech Republic,0.5319,250,470,0.0401,0.4833,0.4333,Apply,2,0.465,0.65,0.2,0.9697,0.1111,0.6858,B,0.131,0.28,0.52,0.0,,2,1
+Master in Cybersecurity,University of Aveiro,Portugal,0.3745,176,470,0.0471,0.6238,0.5238,Create,4,0.48,0.7,0.2,1.0,0.3333,0.6833,B,0.102,0.166,0.77,0.281,,1,3
+Cybersecurity and Data Science,University of Piraeus,Greece,0.4404,207,470,0.0444,0.575,0.5,Evaluate,3,0.415,0.6,0.1,1.0,0.1111,0.6807,B,0.072,0.191,0.25,0.0,,1,1
+Master's study programme Cyber Security,Faculty of Information Studies in Novo mesto,Slovenia,0.5298,249,470,0.0364,0.6417,0.5417,Evaluate,4,0.49,0.85,0.1,0.7889,0.1111,0.6761,B,0.284,0.26,0.52,0.0,,2,1
+Information Security Management,FH OÖ,Austria,0.4766,224,470,0.046,0.5194,0.4444,Analyze,3,0.37,0.45,0.1,1.0,0.1111,0.6716,B,0.207,0.225,0.25,0.0,,0,1
+"Computer engineering - second degree study, specialization cybersecurity and cloud technologies",Rzeszów University of Technology,Poland,0.3809,179,470,0.0558,0.7602,0.6852,Create,3,0.51,0.8,0.2,0.7836,0.1111,0.6613,B,0.181,0.214,0.54,0.388,,2,1
+Advanced Master of Cybersecurity,KU Leuven,Belgium,0.5149,242,470,0.0348,0.8083,0.7333,Create,3,0.44,0.8,0.0,0.6146,0.2222,0.6548,B,0.095,0.198,0.27,0.0,,1,2
+Digital Technologies and Information Security,Iscte - Instituto Universitário de Lisboa,Portugal,0.4851,228,470,0.0346,0.575,0.5,Analyze,3,0.475,0.8,0.1,0.7911,0.2222,0.6501,B,0.215,0.233,0.27,0.0,,2,2
+University Master in Cybersecurity,University of Alcala,Spain,0.2191,103,470,0.0712,0.6833,0.5833,Create,4,0.395,0.65,0.0,1.0,0.3333,0.64,C,0.026,0.143,0.5,0.319,,0,3
+Master of Electrical Engineering (ICT Security and Networks),KU Leuven,Belgium,0.4447,209,470,0.0427,0.8131,0.7381,Create,3,0.395,0.65,0.0,0.0,0.0,0.6355,C,0.08,0.191,0.79,0.0,,1,0
+"Master in Engineering, Cybersecurity",South-Eastern Finland University of Applied Sciences,Finland,0.5085,239,470,0.043,0.5167,0.4167,Analyze,4,0.365,0.55,0.0,0.8265,0.0,0.6354,C,0.196,0.255,0.25,0.0,,0,0
+Information and Information Technologies Security,Vilnius Gedmininas Technical University (VilniusTech),Lithuania,0.4021,189,470,0.0417,0.6583,0.5833,Create,3,0.31,0.25,0.1,0.8013,0.1111,0.6228,C,0.079,0.202,0.02,0.0,,4,1
+Master in Cybersecurity Management,University of Agder,Norway,0.4128,194,470,0.042,0.6667,0.5667,Create,4,0.505,0.9,0.1,0.649,0.0,0.6182,C,0.16,0.204,0.27,0.0,,0,0
+"Cyberschool: Mathematics of information theory, cryptography",University Rennes,France,0.2979,140,470,0.0594,0.525,0.5,Apply,1,0.28,0.15,0.1,1.0,0.2222,0.6126,C,0.01,0.142,0.5,0.0,,0,2
+"Networking, Infrastructure and Cybersecurity (NICS)",Jönköping University,Sweden,0.2255,106,470,0.0548,0.525,0.5,Apply,1,0.3733,0.8,0.0,1.0,0.1111,0.6092,C,0.068,0.0,0.25,0.412,,1,1
+Information & Cyber Security,Lucerne University of Applied Sciences and Arts,Switzerland,0.3851,181,470,0.0158,0.6611,0.6111,Evaluate,2,0.45,0.6,0.2,0.5444,0.1111,0.5797,C,0.052,0.184,0.27,0.0,,0,1
+Information Security,"University of Maribor, Faculty of Criminal Justice and Security",Slovenia,0.3191,150,470,0.0202,0.675,0.625,Create,2,0.33,0.2,0.2,0.6552,0.2222,0.575,C,0.08,0.127,0.75,0.0,,2,2
+Professional master's degree in Cybersecurity Management,BA School of Business and Finance,Latvia,0.4787,225,470,0.0373,0.4667,0.4167,Apply,2,0.335,0.45,0.0,0.6585,0.1111,0.5723,C,0.114,0.274,0.0,0.0,,2,1
+Software Engineering specialisation Cybersecurity,University of Iceland,Iceland,0.234,110,470,0.0667,0.575,0.5,Evaluate,3,0.47,0.9,0.0,0.7353,0.3333,0.5678,C,0.029,0.103,0.77,0.312,,2,3
+CyberMACS- Erasmus Mundus Joint Master’s Degree (EMJM) Programme in Applied Cybersecurity,"Kadir Has University (Coordinator-Türkiye), SRH Berlin University of Applied Sciences (Partner-Germany),  Cyril and Methodius University (Partner-North Macedonia)",Multi-country,0.2234,105,470,0.0842,0.4833,0.4333,Apply,2,0.475,0.8,0.1,0.7405,0.1111,0.5463,C,0.029,0.132,0.77,0.425,,2,1
+IT & Mobile Security,FH JOANNEUM GmbH,Austria,0.4213,198,470,0.0415,0.7417,0.6667,Create,3,0.235,0.0,0.1,0.3491,0.3333,0.52,C,0.048,0.182,0.5,0.3,,0,3
+Artificial Intelligence & Cybersecurity,University of Udine,Italy,0.234,110,470,0.0696,0.6167,0.5417,Create,3,0.445,0.7,0.1,0.0,0.1111,0.5175,C,0.032,0.124,0.5,0.281,,1,1
+Information Security,Brno University of Technology,Czech Republic,0.2085,98,470,0.0245,0.525,0.5,Apply,1,0.2683,0.45,0.0,0.6176,0.1111,0.4981,D,0.017,0.0,0.0,0.0,,2,1
+MSc Cybersecurity,University of Central Lancashire Cyprus (UCLan Cyprus),Cyprus,0.2149,101,470,0.0868,0.525,0.5,Apply,1,0.3033,0.45,0.1,0.5,0.2222,0.4662,D,0.034,0.0,0.5,0.412,,2,2
+Masters in Information Security,Faculdade de Ciências da Universidade do Porto,Portugal,0.3426,161,470,0.0289,0.525,0.5,Apply,1,0.2583,0.3,0.1,0.2824,0.1111,0.4457,D,0.058,0.0,0.5,0.475,,0,1
+Cyber Security and Resilience,Sankt Pölten University of Applied Sciences (FH St. Pölten),Austria,0.1894,89,470,0.0373,0.0,0.0,None,0,0.3433,0.7,0.0,0.6053,0.1111,0.3946,D,0.014,0.0,0.5,0.0,,0,1
+Information Security Technology track,Eindhoven University of Technology,Netherlands,0.3404,160,470,0.0577,0.1917,0.1667,Remember,1,0.335,0.45,0.0,0.2263,0.2222,0.3716,D,0.014,0.127,0.25,0.363,,0,2
+"Master's Degree in Information Technology, Cyber Security",JAMK University of Applied Sciences,Finland,0.0915,43,470,0.0851,0.0,0.0,None,0,0.2383,0.35,0.0,0.2791,0.1111,0.2656,E,0.01,0.0,0.0,0.438,,0,1
+Bachelor of Cybersecurity,Masaryk University,Czech Republic,0.2277,107,470,0.072,0.0,0.0,None,0,0.3433,0.7,0.0,0.0,0.2222,0.2476,E,0.009,0.0,0.25,0.544,,0,2

@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Cybersecurity Education Knowledge Graph</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { background: #0d1117; font-family: 'Segoe UI', system-ui, sans-serif; overflow: hidden; }
+  #graph-container { width: 100vw; height: 100vh; }
+  svg { display: block; }
+
+  /* Legend */
+  #legend {
+    position: absolute; top: 16px; left: 16px;
+    background: rgba(13,17,23,0.92); border: 1px solid #30363d;
+    border-radius: 8px; padding: 14px 18px; color: #c9d1d9;
+    font-size: 12px; max-height: 90vh; overflow-y: auto;
+    pointer-events: auto; z-index: 10;
+  }
+  #legend h3 { margin-bottom: 8px; font-size: 14px; color: #f0f6fc; }
+  .legend-item { display: flex; align-items: center; margin: 4px 0; cursor: pointer; }
+  .legend-item:hover { opacity: 0.7; }
+  .legend-dot { width: 12px; height: 12px; border-radius: 50%; margin-right: 8px; flex-shrink: 0; }
+  .legend-section { margin-top: 10px; font-weight: 600; color: #8b949e; font-size: 11px; text-transform: uppercase; letter-spacing: 0.5px; }
+  .legend-line { display: inline-block; width: 20px; height: 0; margin-right: 8px; vertical-align: middle; }
+
+  /* Tooltip */
+  #tooltip {
+    position: absolute; display: none; pointer-events: none;
+    background: rgba(22,27,34,0.95); border: 1px solid #30363d;
+    border-radius: 6px; padding: 10px 14px; color: #c9d1d9;
+    font-size: 12px; max-width: 320px; z-index: 20;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+  }
+  #tooltip .tt-label { font-weight: 600; font-size: 13px; color: #f0f6fc; margin-bottom: 4px; }
+  #tooltip .tt-type { color: #8b949e; font-size: 11px; }
+  #tooltip .tt-meta { color: #8b949e; font-size: 11px; margin-top: 2px; }
+
+  /* Controls */
+  #controls {
+    position: absolute; top: 16px; right: 16px;
+    display: flex; gap: 8px; z-index: 10;
+  }
+  #controls button {
+    background: #21262d; color: #c9d1d9; border: 1px solid #30363d;
+    border-radius: 6px; padding: 6px 14px; font-size: 12px; cursor: pointer;
+  }
+  #controls button:hover { background: #30363d; }
+
+  /* Title */
+  #title {
+    position: absolute; bottom: 16px; left: 50%; transform: translateX(-50%);
+    color: #8b949e; font-size: 11px; z-index: 10;
+  }
+</style>
+</head>
+<body>
+
+<div id="graph-container"></div>
+
+<div id="legend">
+  <h3>Knowledge Graph (v2)</h3>
+  <div class="legend-section">Node Types</div>
+  <div class="legend-item" data-type="center"><span class="legend-dot" style="background:#1a1a2e;border:2px solid #f0f6fc"></span>Center Hub</div>
+  <div class="legend-item" data-type="category"><span class="legend-dot" style="background:#16213e;border:1px solid #e0e6ed"></span>Category (3)</div>
+  <div class="legend-item" data-type="ecsf_role"><span class="legend-dot" style="background:#e94560"></span>ECSF Role (12)</div>
+  <div class="legend-item" data-type="nice_category"><span class="legend-dot" style="background:#d97706"></span>NICE Category (5)</div>
+  <div class="legend-item" data-type="nice_role"><span class="legend-dot" style="background:#f59e0b"></span>NICE Work Role (49)</div>
+  <div class="legend-item" data-type="university"><span class="legend-dot" style="background:#0f3460"></span>University (32)</div>
+  <div class="legend-item" data-type="program"><span class="legend-dot" style="background:#2196F3"></span>Program (34)</div>
+  <div class="legend-item" data-type="country"><span class="legend-dot" style="background:#533483"></span>Country (20)</div>
+  <div class="legend-item" data-type="skill"><span class="legend-dot" style="background:#00b4d8"></span>Skill (72)</div>
+  <div class="legend-item" data-type="knowledge"><span class="legend-dot" style="background:#48cae4"></span>Knowledge (62)</div>
+  <div class="legend-item" data-type="jrc_domain"><span class="legend-dot" style="background:#10b981"></span>JRC Domain (53)</div>
+  <div class="legend-item" data-type="jrc_concept"><span class="legend-dot" style="background:#34d399"></span>JRC Concept (155)</div>
+  <div class="legend-section" style="margin-top:12px">Edge Types</div>
+  <div class="legend-item"><span class="legend-line" style="border-top:2.5px solid #f0f6fc"></span>Has Category</div>
+  <div class="legend-item"><span class="legend-line" style="border-top:2px solid #e94560"></span>Has Member</div>
+  <div class="legend-item"><span class="legend-line" style="border-top:1.5px dashed #e94560"></span>Prepares For (ECSF)</div>
+  <div class="legend-item"><span class="legend-line" style="border-top:1px dashed #f59e0b"></span>Prepares For (NICE)</div>
+  <div class="legend-item"><span class="legend-line" style="border-top:1px solid #d97706"></span>Has Work Role</div>
+  <div class="legend-item"><span class="legend-line" style="border-top:2px solid #0f3460"></span>Offers</div>
+  <div class="legend-item"><span class="legend-line" style="border-top:1px solid #00b4d8"></span>Requires Skill</div>
+  <div class="legend-item"><span class="legend-line" style="border-top:1px solid #48cae4"></span>Requires Knowledge</div>
+  <div class="legend-item"><span class="legend-line" style="border-top:1.2px dashed #533483"></span>Located In</div>
+  <div class="legend-item"><span class="legend-line" style="border-top:0.8px solid #10b981"></span>Broader Than (JRC)</div>
+  <div class="legend-item"><span class="legend-line" style="border-top:1px dashed #34d399"></span>Covers Concept</div>
+</div>
+
+<div id="controls">
+  <button onclick="resetZoom()">Reset View</button>
+  <button onclick="toggleLabels()">Toggle Labels</button>
+  <button onclick="exportSVG()">Export SVG</button>
+</div>
+
+<div id="tooltip">
+  <div class="tt-label"></div>
+  <div class="tt-type"></div>
+  <div class="tt-meta"></div>
+</div>
+
+<div id="title">European Cybersecurity Education Knowledge Graph (v2) &mdash; 498 nodes, 1406 edges &mdash; ECSF + NICE Framework + JRC Taxonomy</div>
+
+<script src="https://d3js.org/d3.v7.min.js"></script>
+<script>
+const WIDTH = window.innerWidth;
+const HEIGHT = window.innerHeight;
+let showLabels = true;
+
+const svg = d3.select("#graph-container")
+  .append("svg")
+  .attr("width", WIDTH)
+  .attr("height", HEIGHT)
+  .attr("viewBox", [0, 0, WIDTH, HEIGHT])
+  .attr("xmlns", "http://www.w3.org/2000/svg");
+
+// Defs for arrowheads
+const defs = svg.append("defs");
+["#f0f6fc","#e94560","#f59e0b","#d97706","#0f3460","#2196F3","#00b4d8","#48cae4","#533483","#10b981","#34d399","#8b5cf6","#ec4899","#999999"].forEach(c => {
+  defs.append("marker")
+    .attr("id", "arrow-" + c.replace("#",""))
+    .attr("viewBox", "0 -4 8 8")
+    .attr("refX", 20).attr("refY", 0)
+    .attr("markerWidth", 6).attr("markerHeight", 6)
+    .attr("orient", "auto")
+    .append("path").attr("d", "M0,-3L7,0L0,3Z").attr("fill", c).attr("opacity", 0.6);
+});
+
+const g = svg.append("g");
+
+const zoom = d3.zoom()
+  .scaleExtent([0.1, 8])
+  .on("zoom", (event) => g.attr("transform", event.transform));
+svg.call(zoom);
+
+// Load data
+d3.json("kg_d3_data.json").then(data => {
+
+  // Force simulation
+  const simulation = d3.forceSimulation(data.nodes)
+    .force("link", d3.forceLink(data.links)
+      .id((d,i) => i)
+      .distance(d => {
+        const et = d.edge_type;
+        if (et === "HAS_CATEGORY") return 80;
+        if (et === "HAS_MEMBER" || et === "INCLUDES_ROLE") return 100;
+        if (et === "OFFERS") return 60;
+        if (et === "LOCATED_IN") return 80;
+        if (et === "PREPARES_FOR" || et === "PREPARES_FOR_NICE") return 140;
+        if (et === "REQUIRES_SKILL" || et === "REQUIRES_KNOWLEDGE") return 90;
+        if (et === "HAS_WORK_ROLE") return 70;
+        if (et === "BROADER_THAN") return 50;
+        if (et === "COVERS_CONCEPT") return 120;
+        return 100;
+      })
+      .strength(d => {
+        const et = d.edge_type;
+        if (et === "HAS_CATEGORY") return 1.0;
+        if (et === "HAS_MEMBER" || et === "INCLUDES_ROLE") return 0.8;
+        if (et === "OFFERS") return 1.0;
+        if (et === "LOCATED_IN") return 0.3;
+        if (et === "BROADER_THAN") return 0.5;
+        return 0.2;
+      })
+    )
+    .force("charge", d3.forceManyBody()
+      .strength(d => {
+        if (d.node_type === "center") return -600;
+        if (d.node_type === "category") return -400;
+        if (d.node_type === "ecsf_role") return -200;
+        if (d.node_type === "nice_category") return -150;
+        if (d.node_type === "jrc_domain") return -100;
+        if (d.node_type === "university" || d.node_type === "program") return -120;
+        if (d.node_type === "country") return -180;
+        return -40;
+      })
+    )
+    .force("center", d3.forceCenter(WIDTH / 2, HEIGHT / 2))
+    .force("collision", d3.forceCollide().radius(d => d.radius + 3))
+    .force("x", d3.forceX(WIDTH / 2).strength(0.03))
+    .force("y", d3.forceY(HEIGHT / 2).strength(0.03));
+
+  // Links
+  const link = g.append("g")
+    .attr("class", "links")
+    .selectAll("line")
+    .data(data.links)
+    .join("line")
+    .attr("stroke", d => d.color)
+    .attr("stroke-width", d => d.width)
+    .attr("stroke-dasharray", d => d.dash || null)
+    .attr("stroke-opacity", 0.35)
+    .attr("marker-end", d => "url(#arrow-" + d.color.replace("#","") + ")");
+
+  // Node groups
+  const node = g.append("g")
+    .attr("class", "nodes")
+    .selectAll("g")
+    .data(data.nodes)
+    .join("g")
+    .call(d3.drag()
+      .on("start", dragStart)
+      .on("drag", dragging)
+      .on("end", dragEnd));
+
+  // Circles
+  node.append("circle")
+    .attr("r", d => d.radius)
+    .attr("fill", d => d.color)
+    .attr("stroke", d => d.node_type === "center" ? "#f0f6fc" : "rgba(255,255,255,0.15)")
+    .attr("stroke-width", d => d.node_type === "center" ? 3 : 1)
+    .attr("opacity", 0.9);
+
+  // Labels (only for larger nodes by default)
+  const labels = node.append("text")
+    .text(d => {
+      if (d.node_type === "center" || d.node_type === "category" ||
+          d.node_type === "ecsf_role" || d.node_type === "country" ||
+          d.node_type === "university" || d.node_type === "nice_category") {
+        return d.label.length > 30 ? d.label.slice(0, 28) + ".." : d.label;
+      }
+      return "";
+    })
+    .attr("dx", d => d.radius + 4)
+    .attr("dy", 3)
+    .attr("fill", "#8b949e")
+    .attr("font-size", d => {
+      if (d.node_type === "center") return "13px";
+      if (d.node_type === "ecsf_role") return "10px";
+      return "8px";
+    })
+    .attr("font-family", "Segoe UI, system-ui, sans-serif")
+    .attr("pointer-events", "none");
+
+  // Tooltip
+  const tooltip = d3.select("#tooltip");
+  node.on("mouseover", (event, d) => {
+    tooltip.style("display", "block");
+    tooltip.select(".tt-label").text(d.label);
+    tooltip.select(".tt-type").text("Type: " + d.node_type);
+    let meta = "";
+    if (d.country) meta += "Country: " + d.country;
+    if (d.university) meta += (meta ? " | " : "") + "Uni: " + d.university;
+    if (d.composite_score) meta += (meta ? " | " : "") + "Score: " + d.composite_score;
+    if (d.grade) meta += (meta ? " | " : "") + "Grade: " + d.grade;
+    if (d.facet) meta += (meta ? " | " : "") + "Facet: " + d.facet;
+    if (d.nice_category) meta += (meta ? " | " : "") + "Category: " + d.nice_category;
+    tooltip.select(".tt-meta").text(meta);
+
+    // Highlight connected
+    const connected = new Set();
+    data.links.forEach(l => {
+      const si = typeof l.source === "object" ? l.source.index : l.source;
+      const ti = typeof l.target === "object" ? l.target.index : l.target;
+      if (si === d.index) connected.add(ti);
+      if (ti === d.index) connected.add(si);
+    });
+    connected.add(d.index);
+
+    node.select("circle").attr("opacity", n => connected.has(n.index) ? 1 : 0.08);
+    labels.attr("opacity", n => connected.has(n.index) ? 1 : 0.08);
+    link.attr("stroke-opacity", l => {
+      const si = typeof l.source === "object" ? l.source.index : l.source;
+      const ti = typeof l.target === "object" ? l.target.index : l.target;
+      return (si === d.index || ti === d.index) ? 0.8 : 0.03;
+    });
+  })
+  .on("mousemove", (event) => {
+    tooltip.style("left", (event.pageX + 14) + "px").style("top", (event.pageY - 10) + "px");
+  })
+  .on("mouseout", () => {
+    tooltip.style("display", "none");
+    node.select("circle").attr("opacity", 0.9);
+    labels.attr("opacity", 1);
+    link.attr("stroke-opacity", 0.35);
+  });
+
+  // Legend filtering
+  d3.selectAll(".legend-item[data-type]").on("click", function() {
+    const type = this.dataset.type;
+    const current = d3.select(this).classed("dimmed");
+    d3.select(this).classed("dimmed", !current).style("opacity", current ? 1 : 0.3);
+    node.select("circle").attr("display", d =>
+      d3.select(`.legend-item[data-type="${d.node_type}"]`).classed("dimmed") ? "none" : null
+    );
+    labels.attr("display", d =>
+      d3.select(`.legend-item[data-type="${d.node_type}"]`).classed("dimmed") ? "none" : null
+    );
+  });
+
+  // Tick
+  simulation.on("tick", () => {
+    link
+      .attr("x1", d => d.source.x).attr("y1", d => d.source.y)
+      .attr("x2", d => d.target.x).attr("y2", d => d.target.y);
+    node.attr("transform", d => `translate(${d.x},${d.y})`);
+  });
+
+  // Drag
+  function dragStart(event, d) {
+    if (!event.active) simulation.alphaTarget(0.3).restart();
+    d.fx = d.x; d.fy = d.y;
+  }
+  function dragging(event, d) { d.fx = event.x; d.fy = event.y; }
+  function dragEnd(event, d) {
+    if (!event.active) simulation.alphaTarget(0);
+    d.fx = null; d.fy = null;
+  }
+
+  // Warm up and then cool down for static export
+  simulation.alpha(1).restart();
+
+  // Store reference for export
+  window._simulation = simulation;
+  window._data = data;
+});
+
+function resetZoom() {
+  svg.transition().duration(500).call(zoom.transform, d3.zoomIdentity);
+}
+
+function toggleLabels() {
+  showLabels = !showLabels;
+  g.selectAll(".nodes text").attr("display", showLabels ? null : "none");
+}
+
+function exportSVG() {
+  // Clone SVG for clean export
+  const clone = svg.node().cloneNode(true);
+  // Set explicit background
+  const bg = document.createElementNS("http://www.w3.org/2000/svg", "rect");
+  bg.setAttribute("width", "100%");
+  bg.setAttribute("height", "100%");
+  bg.setAttribute("fill", "#0d1117");
+  clone.insertBefore(bg, clone.firstChild);
+
+  const serializer = new XMLSerializer();
+  const svgStr = serializer.serializeToString(clone);
+  const blob = new Blob([svgStr], {type: "image/svg+xml;charset=utf-8"});
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement("a");
+  a.href = url;
+  a.download = "cybersecurity_education_kg.svg";
+  a.click();
+  URL.revokeObjectURL(url);
+}
+</script>
+</body>
+</html>

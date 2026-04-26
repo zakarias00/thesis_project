@@ -1,0 +1,4 @@
+method_a,method_b,mean_jaccard,median_jaccard,std_jaccard
+ecsf,nice,0.4335,0.431,0.1151
+ecsf,jrc,0.4755,0.4615,0.0982
+nice,jrc,0.5019,0.5,0.1139
