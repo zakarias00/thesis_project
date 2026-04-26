@@ -194,7 +194,7 @@ class AnalyticsPipeline:
             soa_flat = SkillAligner.flatten_all_soa(self.soa_results)
             self.exporter.export_soa_flat(soa_flat)
 
-        # ── 6. Breadth / depth / progression / immersion ───────────────────
+        # Breadth / depth / progression / immersion
         if cfg.run_breadth:
             logger.info("Stage: coverage breadth")
             stages_executed.append("breadth")
