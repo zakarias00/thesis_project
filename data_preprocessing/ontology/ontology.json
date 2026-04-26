@@ -1,0 +1,72 @@
+{
+  "graphs" : [ {
+    "id" : "http://example.org/course_ontology",
+    "nodes" : [ {
+      "id" : "http://example.org/course_ontology#Course",
+      "type" : "CLASS"
+    }, {
+      "id" : "http://example.org/course_ontology#DescriptionText",
+      "type" : "CLASS"
+    }, {
+      "id" : "http://example.org/course_ontology#Skill",
+      "type" : "CLASS"
+    }, {
+      "id" : "http://example.org/course_ontology#hasDescription",
+      "type" : "PROPERTY",
+      "propertyType" : "OBJECT"
+    }, {
+      "id" : "http://example.org/course_ontology#hasSkill",
+      "type" : "PROPERTY",
+      "propertyType" : "OBJECT"
+    }, {
+      "id" : "http://example.org/course_ontology#combinedDescription",
+      "type" : "PROPERTY",
+      "propertyType" : "DATA"
+    }, {
+      "id" : "http://example.org/course_ontology#courseTitle",
+      "type" : "PROPERTY",
+      "propertyType" : "DATA"
+    }, {
+      "id" : "http://example.org/course_ontology#descriptionText",
+      "type" : "PROPERTY",
+      "propertyType" : "DATA"
+    }, {
+      "id" : "http://example.org/course_ontology#originalDescription",
+      "type" : "PROPERTY",
+      "propertyType" : "DATA"
+    }, {
+      "id" : "http://example.org/course_ontology#skillName",
+      "type" : "PROPERTY",
+      "propertyType" : "DATA"
+    } ],
+    "domainRangeAxioms" : [ {
+      "predicateId" : "http://example.org/course_ontology#combinedDescription",
+      "domainClassIds" : [ "http://example.org/course_ontology#DescriptionText" ],
+      "rangeClassIds" : [ "xsd:string" ]
+    }, {
+      "predicateId" : "http://example.org/course_ontology#courseTitle",
+      "domainClassIds" : [ "http://example.org/course_ontology#Course" ],
+      "rangeClassIds" : [ "xsd:string" ]
+    }, {
+      "predicateId" : "http://example.org/course_ontology#descriptionText",
+      "domainClassIds" : [ "http://example.org/course_ontology#DescriptionText" ],
+      "rangeClassIds" : [ "xsd:string" ]
+    }, {
+      "predicateId" : "http://example.org/course_ontology#hasDescription",
+      "domainClassIds" : [ "http://example.org/course_ontology#Course" ],
+      "rangeClassIds" : [ "http://example.org/course_ontology#DescriptionText" ]
+    }, {
+      "predicateId" : "http://example.org/course_ontology#hasSkill",
+      "domainClassIds" : [ "http://example.org/course_ontology#Course" ],
+      "rangeClassIds" : [ "http://example.org/course_ontology#Skill" ]
+    }, {
+      "predicateId" : "http://example.org/course_ontology#originalDescription",
+      "domainClassIds" : [ "http://example.org/course_ontology#DescriptionText" ],
+      "rangeClassIds" : [ "xsd:string" ]
+    }, {
+      "predicateId" : "http://example.org/course_ontology#skillName",
+      "domainClassIds" : [ "http://example.org/course_ontology#Skill" ],
+      "rangeClassIds" : [ "xsd:string" ]
+    } ]
+  } ]
+}

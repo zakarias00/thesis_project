@@ -1,0 +1,144 @@
+{
+  "elements": {
+    "nodes": [
+      {
+        "data": {
+          "id": "http://example.org/course_ontology#Course",
+          "label": "Course",
+          "type": "CLASS",
+          "propertyType": null
+        }
+      },
+      {
+        "data": {
+          "id": "http://example.org/course_ontology#DescriptionText",
+          "label": "DescriptionText",
+          "type": "CLASS",
+          "propertyType": null
+        }
+      },
+      {
+        "data": {
+          "id": "http://example.org/course_ontology#Skill",
+          "label": "Skill",
+          "type": "CLASS",
+          "propertyType": null
+        }
+      },
+      {
+        "data": {
+          "id": "http://example.org/course_ontology#hasDescription",
+          "label": "hasDescription",
+          "type": "PROPERTY",
+          "propertyType": "OBJECT"
+        }
+      },
+      {
+        "data": {
+          "id": "http://example.org/course_ontology#hasSkill",
+          "label": "hasSkill",
+          "type": "PROPERTY",
+          "propertyType": "OBJECT"
+        }
+      },
+      {
+        "data": {
+          "id": "http://example.org/course_ontology#combinedDescription",
+          "label": "combinedDescription",
+          "type": "PROPERTY",
+          "propertyType": "DATA"
+        }
+      },
+      {
+        "data": {
+          "id": "http://example.org/course_ontology#courseTitle",
+          "label": "courseTitle",
+          "type": "PROPERTY",
+          "propertyType": "DATA"
+        }
+      },
+      {
+        "data": {
+          "id": "http://example.org/course_ontology#descriptionText",
+          "label": "descriptionText",
+          "type": "PROPERTY",
+          "propertyType": "DATA"
+        }
+      },
+      {
+        "data": {
+          "id": "http://example.org/course_ontology#originalDescription",
+          "label": "originalDescription",
+          "type": "PROPERTY",
+          "propertyType": "DATA"
+        }
+      },
+      {
+        "data": {
+          "id": "http://example.org/course_ontology#skillName",
+          "label": "skillName",
+          "type": "PROPERTY",
+          "propertyType": "DATA"
+        }
+      }
+    ],
+    "edges": [
+      {
+        "data": {
+          "id": "http://example.org/course_ontology#combinedDescription_edge",
+          "source": "http://example.org/course_ontology#DescriptionText",
+          "target": "xsd:string",
+          "label": "combinedDescription"
+        }
+      },
+      {
+        "data": {
+          "id": "http://example.org/course_ontology#courseTitle_edge",
+          "source": "http://example.org/course_ontology#Course",
+          "target": "xsd:string",
+          "label": "courseTitle"
+        }
+      },
+      {
+        "data": {
+          "id": "http://example.org/course_ontology#descriptionText_edge",
+          "source": "http://example.org/course_ontology#DescriptionText",
+          "target": "xsd:string",
+          "label": "descriptionText"
+        }
+      },
+      {
+        "data": {
+          "id": "http://example.org/course_ontology#hasDescription_edge",
+          "source": "http://example.org/course_ontology#Course",
+          "target": "http://example.org/course_ontology#DescriptionText",
+          "label": "hasDescription"
+        }
+      },
+      {
+        "data": {
+          "id": "http://example.org/course_ontology#hasSkill_edge",
+          "source": "http://example.org/course_ontology#Course",
+          "target": "http://example.org/course_ontology#Skill",
+          "label": "hasSkill"
+        }
+      },
+      {
+        "data": {
+          "id": "http://example.org/course_ontology#originalDescription_edge",
+          "source": "http://example.org/course_ontology#DescriptionText",
+          "target": "xsd:string",
+          "label": "originalDescription"
+        }
+      },
+      {
+        "data": {
+          "id": "http://example.org/course_ontology#skillName_edge",
+          "source": "http://example.org/course_ontology#Skill",
+          "target": "xsd:string",
+          "label": "skillName"
+        }
+      }
+    ]
+  }
+}

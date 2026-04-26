@@ -1,0 +1,35 @@
+<?xml version="1.0" ?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" xml:base="http://example.org/course_ontology">
+  <owl:Ontology rdf:about="http://example.org/course_ontology"/>
+  <owl:Class rdf:about="#Course"/>
+  <owl:Class rdf:about="#Skill"/>
+  <owl:Class rdf:about="#DescriptionText"/>
+  <owl:ObjectProperty rdf:about="#hasSkill">
+    <rdfs:domain rdf:resource="#Course"/>
+    <rdfs:range rdf:resource="#Skill"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="#hasDescription">
+    <rdfs:domain rdf:resource="#Course"/>
+    <rdfs:range rdf:resource="#DescriptionText"/>
+  </owl:ObjectProperty>
+  <owl:DatatypeProperty rdf:about="#courseTitle">
+    <rdfs:domain rdf:resource="#Course"/>
+    <rdfs:range rdf:resource="xsd:string"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="#descriptionText">
+    <rdfs:domain rdf:resource="#DescriptionText"/>
+    <rdfs:range rdf:resource="xsd:string"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="#originalDescription">
+    <rdfs:domain rdf:resource="#DescriptionText"/>
+    <rdfs:range rdf:resource="xsd:string"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="#combinedDescription">
+    <rdfs:domain rdf:resource="#DescriptionText"/>
+    <rdfs:range rdf:resource="xsd:string"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="#skillName">
+    <rdfs:domain rdf:resource="#Skill"/>
+    <rdfs:range rdf:resource="xsd:string"/>
+  </owl:DatatypeProperty>
+</rdf:RDF>
