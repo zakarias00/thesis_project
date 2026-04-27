@@ -1,0 +1,1283 @@
+@prefix ecsf: <http://enisa.europa.eu/ecsf#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+ecsf:Chief_Information_Security_Officer__CISO_ a ecsf:Role ;
+    rdfs:label "Chief Information Security Officer (CISO)" ;
+    ecsf:hasKnowledge ecsf:knowledge_Cybersecurity_maturity_models,
+        ecsf:knowledge_Cybersecurity_policies,
+        ecsf:knowledge_Cybersecurity_procedures,
+        ecsf:knowledge_Cybersecurity_recommendations_and_best_practices,
+        ecsf:knowledge_Cybersecurity_related_certifications,
+        ecsf:knowledge_Cybersecurity_related_laws__regulations_and_legislations,
+        ecsf:knowledge_Cybersecurity_standards__methodologies_and_frameworks,
+        ecsf:knowledge_Ethical_cybersecurity_organisation_requirements,
+        ecsf:knowledge_Management_practices,
+        ecsf:knowledge_Resource_management,
+        ecsf:knowledge_Risk_management_standards__methodologies_and_frameworks ;
+    ecsf:hasSkill ecsf:skill_Analyse_and_comply_with_cybersecurity_related_laws__regulati,
+        ecsf:skill_Analyse_and_implement_cybersecurity_policies__certifications,
+        ecsf:skill_Anticipate_cybersecurity_threats__needs_and_upcoming_challen,
+        ecsf:skill_Anticipate_required_changes_to_the_organisation_s_informatio,
+        ecsf:skill_Assess_and_enhance_an_organisation_s_cybersecurity_posture,
+        ecsf:skill_Communicate__coordinate_and_cooperate_with_internal_and_exte,
+        ecsf:skill_Define_and_apply_maturity_models_for_cybersecurity_managemen,
+        ecsf:skill_Design__apply__monitor_and_review_Information_Security_Manag,
+        ecsf:skill_Develop__champion_and_lead_the_execution_of_a_cybersecurity_,
+        ecsf:skill_Establish_a_cybersecurity_plan,
+        ecsf:skill_Identify_and_solve_cybersecurity_related_issues,
+        ecsf:skill_Implement_cybersecurity_recommendations_and_best_practices,
+        ecsf:skill_Influence_an_organisation_s_cybersecurity_culture,
+        ecsf:skill_Manage_cybersecurity_resources,
+        ecsf:skill_Motivate_and_encourage_people,
+        ecsf:skill_Review_and_enhance_security_documents__reports__SLAs_and_ens ;
+    ecsf:hasTask ecsf:task_Define__implement__communicate_and_maintain_cybersecurity_go,
+        ecsf:task_Develop_cybersecurity_plans,
+        ecsf:task_Develop_relationships_with_cybersecurity_related_authorities,
+        ecsf:task_Educate_senior_management_about_cybersecurity_risks__threats,
+        ecsf:task_Ensure_the_organisation_s_resiliency_to_cyber_incidents,
+        ecsf:task_Ensure_the_senior_management_approves_the_cybersecurity_risk,
+        ecsf:task_Manage_continuous_capacity_building_within_the_organisation,
+        ecsf:task_Monitor_advancement_in_cybersecurity,
+        ecsf:task_Negotiate_the_cybersecurity_budget_with_the_senior_managemen,
+        ecsf:task_Prepare_and_present_cybersecurity_vision__strategies_and_pol,
+        ecsf:task_Report_cybersecurity_incidents__risks__findings_to_the_senio,
+        ecsf:task_Review__plan_and_allocate_appropriate_cybersecurity_resource,
+        ecsf:task_Secure_resources_to_implement_the_cybersecurity_strategy,
+        ecsf:task_Supervise_the_application_and_improvement_of_the_Information,
+        ecsf:task_System__ISMS_,
+        ecsf:task_objectives,
+        ecsf:task_senior_management_of_the_organisation_and_ensure_their_execu,
+        ecsf:task_strategies__policies__aligned_with_the_business_strategy_to_,
+        ecsf:task_the_organisation .
+
+ecsf:Cyber_Incident_Responder a ecsf:Role ;
+    rdfs:label "Cyber Incident Responder" ;
+    ecsf:hasKnowledge ecsf:knowledge_Computer_Security_Incident_Response_Teams__CSIRTs__operation,
+        ecsf:knowledge_Computer_networks_security,
+        ecsf:knowledge_Computer_systems_vulnerabilities,
+        ecsf:knowledge_Cyber_threats,
+        ecsf:knowledge_Cybersecurity_attack_procedures,
+        ecsf:knowledge_Cybersecurity_related_certifications,
+        ecsf:knowledge_Cybersecurity_related_laws__regulations_and_legislations,
+        ecsf:knowledge_Incident_handling_communication_procedures,
+        ecsf:knowledge_Incident_handling_recommendations_and_best_practices,
+        ecsf:knowledge_Incident_handling_standards__methodologies_and_frameworks,
+        ecsf:knowledge_Incident_handling_tools,
+        ecsf:knowledge_Operating_systems_security,
+        ecsf:knowledge_Secure_Operation_Centres__SOCs__operation ;
+    ecsf:hasSkill ecsf:skill_Collect__analyse_and_correlate_cyber_threat_information_orig,
+        ecsf:skill_Communicate__present_and_report_to_relevant_stakeholders,
+        ecsf:skill_Manage_and_analyse_log_files,
+        ecsf:skill_Practice_all_technical__functional_and_operational_aspects_o,
+        ecsf:skill_Work_on_operating_systems__servers__clouds_and_relevant_infr,
+        ecsf:skill_Work_under_pressure ;
+    ecsf:hasTask ecsf:task_Cybersecurity_maturity_models,
+        ecsf:task_Cybersecurity_policies,
+        ecsf:task_Cybersecurity_procedures,
+        ecsf:task_Cybersecurity_recommendations_and_best_practices,
+        ecsf:task_Cybersecurity_related_certifications,
+        ecsf:task_Cybersecurity_related_laws__regulations_and_legislations,
+        ecsf:task_Cybersecurity_standards__methodologies_and_frameworks,
+        ecsf:task_Ethical_cybersecurity_organisation_requirements,
+        ecsf:task_Management_practices,
+        ecsf:task_Resource_management,
+        ecsf:task_Risk_management_standards__methodologies_and_frameworks .
+
+ecsf:Cyber_Legal__Policy___Compliance_Officer a ecsf:Role ;
+    rdfs:label "Cyber Legal, Policy & Compliance Officer" ;
+    ecsf:hasKnowledge ecsf:knowledge_Cybersecurity_policies,
+        ecsf:knowledge_Cybersecurity_related_laws__regulations_and_legislations,
+        ecsf:knowledge_Cybersecurity_standards__methodologies_and_frameworks,
+        ecsf:knowledge_Legal__regulatory_and_legislative_compliance_requirements__r,
+        ecsf:knowledge_Privacy_impact_assessment_standards__methodologies_and_frame ;
+    ecsf:hasSkill ecsf:skill_Carry_out_working_life_practices_of_the_data_protection_and_,
+        ecsf:skill_Collaborate_with_other_team_members_and_colleague,
+        ecsf:skill_Comprehensive_understanding_of_the_business_strategy__models,
+        ecsf:skill_Conduct__monitor_and_review_privacy_impact_assessments_using,
+        ecsf:skill_Explain_and_communicate_data_protection_and_privacy_topics_t,
+        ecsf:skill_Lead_the_development_of_appropriate_cybersecurity_and_privac,
+        ecsf:skill_Understand__practice_and_adhere_to_ethical_requirements_and_,
+        ecsf:skill_Understand_legal_framework_modifications_implications_to_the ;
+    ecsf:hasTask ecsf:task_Act_as_a_key_contact_point_to_handle_queries_and_complaints_,
+        ecsf:task_Assist_in_designing__implementing__auditing_and_compliance_t,
+        ecsf:task_Conduct_privacy_impact_assessments_and_develop__maintain__co,
+        ecsf:task_Contribute_to_the_development_of_the_organisation_s_cybersec,
+        ecsf:task_Cooperate_and_share_information_with_authorities_and_profess,
+        ecsf:task_Develop_and_propose_staff_awareness_training_to_achieve_comp,
+        ecsf:task_Enforce_and_advocate_organisation_s_data_privacy_and_protect,
+        ecsf:task_Ensure_compliance_with_and_provide_legal_advice_and_guidance,
+        ecsf:task_Ensure_that_data_owners__holders__controllers__processors__s,
+        ecsf:task_Identify_and_document_compliance_gaps,
+        ecsf:task_Manage_legal_aspects_of_information_security_responsibilitie,
+        ecsf:task_Monitor_audits_and_data_protection_related_training_activiti .
+
+ecsf:Cyber_Threat_Intelligence_Specialist a ecsf:Role ;
+    rdfs:label "Cyber Threat Intelligence Specialist" ;
+    ecsf:hasKnowledge ecsf:knowledge_Advanced_and_persistent_cyber_threats__APT_,
+        ecsf:knowledge_Computer_networks_security,
+        ecsf:knowledge_Computer_programming,
+        ecsf:knowledge_Cross_domain_and_border_domain_knowledge_related_to_cybersec,
+        ecsf:knowledge_Cyber_Threat_Intelligence__CTI__sharing_standards__methodolo,
+        ecsf:knowledge_Cyber_threat_actors,
+        ecsf:knowledge_Cyber_threats,
+        ecsf:knowledge_Cybersecurity_attack_procedures,
+        ecsf:knowledge_Cybersecurity_controls_and_solutions,
+        ecsf:knowledge_Cybersecurity_related_certifications,
+        ecsf:knowledge_Operating_systems_security,
+        ecsf:knowledge_Responsible_information_disclosure_procedures,
+        ecsf:knowledge_Threat_actors_Tactics__Techniques_and_Procedures__TTPs_ ;
+    ecsf:hasSkill ecsf:skill_Automate_threat_intelligence_management_procedures,
+        ecsf:skill_Collaborate_with_other_team_members_and_colleagues,
+        ecsf:skill_Collect__analyse_and_correlate_cyber_threat_information_orig,
+        ecsf:skill_Communicate__coordinate_and_cooperate_with_internal_and_exte,
+        ecsf:skill_Communicate__present_and_report_to_relevant_stakeholders,
+        ecsf:skill_Conduct_technical_analysis_and_reporting,
+        ecsf:skill_Identify_non_cyber_events_with_implications_on_cyber_related,
+        ecsf:skill_Identify_threat_actors_TTPs_and_campaigns,
+        ecsf:skill_Model_threats__actors_and_TTPs,
+        ecsf:skill_Use_and_apply_CTI_platforms_and_tools ;
+    ecsf:hasTask ecsf:task_Articulate_and_communicate_intelligence_openly_and_publicly_,
+        ecsf:task_Convey_the_proper_security_severity_by_explaining_the_risk_e,
+        ecsf:task_Coordinate_with_stakeholders_to_share_and_consume_intelligen,
+        ecsf:task_Develop__implement_and_manage_the_organisation_s_cyber_threa,
+        ecsf:task_Develop_plans_and_procedures_to_manage_threat_intelligence,
+        ecsf:task_Elaborate_and_advise_on_mitigation_plans_at_the_tactical__op,
+        ecsf:task_Identify__monitor_and_assess_the_Tactics__Techniques_and_Pro,
+        ecsf:task_Identify_and_assess_cyber_threat_actors_targeting_the_organi,
+        ecsf:task_Implement_threat_intelligence_collection__analysis_and_produ,
+        ecsf:task_Leverage_intelligence_data_to_support_and_assist_with_threat,
+        ecsf:task_Produce_actionable_reports_based_on_threat_intelligence_data,
+        ecsf:task_Translate_business_requirements_into_Intelligence_Requiremen .
+
+ecsf:Cybersecurity_Architect a ecsf:Role ;
+    rdfs:label "Cybersecurity Architect" ;
+    ecsf:hasKnowledge ecsf:knowledge_Cyber_threats,
+        ecsf:knowledge_Cybersecurity_controls_and_solutions,
+        ecsf:knowledge_Cybersecurity_recommendations_and_best_practices,
+        ecsf:knowledge_Cybersecurity_related_certifications,
+        ecsf:knowledge_Cybersecurity_related_requirements_analysis,
+        ecsf:knowledge_Cybersecurity_related_technologies,
+        ecsf:knowledge_Cybersecurity_risks,
+        ecsf:knowledge_Cybersecurity_standards__methodologies_and_frameworks,
+        ecsf:knowledge_Cybersecurity_trends,
+        ecsf:knowledge_Legacy_cybersecurity_procedures,
+        ecsf:knowledge_Legal__regulatory_and_legislative_compliance_requirements__r,
+        ecsf:knowledge_Privacy_Enhancing_Technologies__PET_,
+        ecsf:knowledge_Secure_development_lifecycle,
+        ecsf:knowledge_Security_architecture_reference_models ;
+    ecsf:hasSkill ecsf:skill_Build_resilience_against_points_of_failure_across_the_archit,
+        ecsf:skill_Communicate__present_and_report_to_relevant_stakeholders,
+        ecsf:skill_Conduct_user_and_business_security_requirements_analysis,
+        ecsf:skill_Coordinate_the_integration_of_security_solutions,
+        ecsf:skill_Decompose_and_analyse_systems_to_develop_security_and_privac,
+        ecsf:skill_Design_systems_and_architectures_based_on_security_and_priva,
+        ecsf:skill_Draw_cybersecurity_architectural_and_functional_specificatio,
+        ecsf:skill_Guide_and_communicate_with_implementers_and_IT_OT_personnel,
+        ecsf:skill_Propose_cybersecurity_architectures_based_on_stakeholder_s_n,
+        ecsf:skill_Select_appropriate_specifications__procedures_and_controls ;
+    ecsf:hasTask ecsf:task_Adapt_the_organisation_s_architecture_to_emerging_threats,
+        ecsf:task_Analyse_and_evaluate_the_cybersecurity_of_the_organisation_s,
+        ecsf:task_Assess_the_implemented_architecture_to_maintain_an_appropria,
+        ecsf:task_Assure_the_security_of_the_solution_architectures_through_se,
+        ecsf:task_Collaborate_with_other_teams_and_colleagues,
+        ecsf:task_Coordinate_the_development__integration_and_maintenance_of_c,
+        ecsf:task_Design_and_propose_a_secure_architecture_to_implement_the_or,
+        ecsf:task_Develop_organisation_s_cybersecurity_architecture_to_address,
+        ecsf:task_Establish_a_secure_environment_during_the_development_lifecy,
+        ecsf:task_Evaluate_the_impact_of_cybersecurity_solutions_on_the_design,
+        ecsf:task_Present_high_level_security_architecture_design_to_stakehold,
+        ecsf:task_Produce_architectural_documentation_and_specifications,
+        ecsf:task_and_performance_of_the_organisation_s_architecture .
+
+ecsf:Cybersecurity_Auditor a ecsf:Role ;
+    rdfs:label "Cybersecurity Auditor" ;
+    ecsf:hasKnowledge ecsf:knowledge_Auditing_related_certification,
+        ecsf:knowledge_Auditing_standards__methodologies_and_frameworks,
+        ecsf:knowledge_Conformity_assessment_standards__methodologies_and_framework,
+        ecsf:knowledge_Cybersecurity_controls_and_solutions,
+        ecsf:knowledge_Cybersecurity_related_certifications,
+        ecsf:knowledge_Cybersecurity_standards__methodologies_and_frameworks,
+        ecsf:knowledge_Legal__regulatory_and_legislative_compliance_requirements__r,
+        ecsf:knowledge_Monitoring__testing_and_evaluating_cybersecurity_controls__e ;
+    ecsf:hasSkill ecsf:skill_Analyse_business_processes__assess_and_review_software_or_ha,
+        ecsf:skill_Apply_auditing_tools_and_techniques,
+        ecsf:skill_Audit_with_integrity__being_impartial_and_independent,
+        ecsf:skill_Collect__evaluate__maintain_and_protect_auditing_information,
+        ecsf:skill_Communicate__explain_and_adapt_legal_and_regulatory_requirem,
+        ecsf:skill_Decompose_and_analyse_systems_to_identify_weaknesses_and_ine,
+        ecsf:skill_Follow_and_practice_auditing_frameworks__standards_and_metho,
+        ecsf:skill_Organise_and_work_in_a_systematic_and_deterministic_way_base ;
+    ecsf:hasTask ecsf:task_Audit_compliance_with_cybersecurity_related_applicable_laws_,
+        ecsf:task_Audit_conformity_with_cybersecurity_related_applicable_stand,
+        ecsf:task_Define_audit_scope__objectives_and_criteria_to_audit_against,
+        ecsf:task_Develop_an_audit_plan_describing_the_frameworks__standards__,
+        ecsf:task_Develop_and_communicate_conformity_assessment__assurance__au,
+        ecsf:task_Develop_the_organisation_s_auditing_policy__procedures__stan,
+        ecsf:task_Establish_the_methodologies_and_practices_used_for_systems_a,
+        ecsf:task_Establish_the_target_environment_and_manage_auditing_activit,
+        ecsf:task_Execute_the_audit_plan_and_collect_evidence_and_measurements,
+        ecsf:task_Maintain_and_protect_the_integrity_of_audit_records,
+        ecsf:task_Monitor_risk_remediation_activities,
+        ecsf:task_Review_target_of_evaluation__security_objectives_and_require .
+
+ecsf:Cybersecurity_Educator a ecsf:Role ;
+    rdfs:label "Cybersecurity Educator" ;
+    ecsf:hasKnowledge ecsf:knowledge_Cybersecurity_awareness__education_and_training_programme_de,
+        ecsf:knowledge_Cybersecurity_controls_and_solutions,
+        ecsf:knowledge_Cybersecurity_education_and_training_standards__methodologie,
+        ecsf:knowledge_Cybersecurity_recommendations_and_best_practices,
+        ecsf:knowledge_Cybersecurity_related_certifications,
+        ecsf:knowledge_Cybersecurity_related_laws__regulations_and_legislations,
+        ecsf:knowledge_Cybersecurity_standards__methodologies_and_frameworks,
+        ecsf:knowledge_Pedagogical_standards__methodologies_and_frameworks ;
+    ecsf:hasSkill ecsf:skill_Communicate__present_and_report_to_relevant_stakeholders,
+        ecsf:skill_Design__develop_and_deliver_learning_programmes_to_cover_cyb,
+        ecsf:skill_Develop_cybersecurity_exercises_including_simulations_using_,
+        ecsf:skill_Develop_evaluation_programs_for_the_awareness__training_and_,
+        ecsf:skill_Identify_and_select_appropriate_pedagogical_approaches_for_t,
+        ecsf:skill_Identify_needs_in_cybersecurity_awareness__training_and_educ,
+        ecsf:skill_Motivate_and_encourage_people,
+        ecsf:skill_Provide_training_towards_cybersecurity_and_data_protection_p,
+        ecsf:skill_Utilise_existing_cybersecurity_related_training_resources ;
+    ecsf:hasTask ecsf:task_Continuously_maintain_and_enhance_expertise__encourage_and_e,
+        ecsf:task_Design__develop_and_deliver_cybersecurity_simulations__virtu,
+        ecsf:task_Develop__update_and_deliver_cybersecurity_and_data_protectio,
+        ecsf:task_Evaluate_and_report_trainee_s_performance,
+        ecsf:task_Finding_new_approaches_for_education__training_and_awareness,
+        ecsf:task_Monitor__evaluate_and_report_training_effectiveness,
+        ecsf:task_Organise__design_and_deliver_cybersecurity_and_data_protecti,
+        ecsf:task_Provide_guidance_on_cybersecurity_certification_programs_for .
+
+ecsf:Cybersecurity_Implementer a ecsf:Role ;
+    rdfs:label "Cybersecurity Implementer" ;
+    ecsf:hasKnowledge ecsf:knowledge_Computer_networks_security,
+        ecsf:knowledge_Computer_programming,
+        ecsf:knowledge_Cybersecurity_controls_and_solutions,
+        ecsf:knowledge_Cybersecurity_recommendations_and_best_practices,
+        ecsf:knowledge_Cybersecurity_related_technologies,
+        ecsf:knowledge_Offensive_and_defensive_security_practices,
+        ecsf:knowledge_Operating_systems_security,
+        ecsf:knowledge_Secure_coding_recommendations_and_best_practices,
+        ecsf:knowledge_Secure_development_lifecycle,
+        ecsf:knowledge_Testing_procedures,
+        ecsf:knowledge_Testing_standards__methodologies_and_frameworks ;
+    ecsf:hasSkill ecsf:skill_Assess_the_security_and_performance_of_solutions,
+        ecsf:skill_Collaborate_with_other_team_members_and_colleagues,
+        ecsf:skill_Communicate__present_and_report_to_relevant_stakeholders,
+        ecsf:skill_Configure_solutions_according_to_the_organisation_s_security,
+        ecsf:skill_Develop_code__scripts_and_programmes,
+        ecsf:skill_Identify_and_solve_cybersecurity_related_issues,
+        ecsf:skill_Integrate_cybersecurity_solutions_to_the_organisation_s_infr ;
+    ecsf:hasTask ecsf:task_Develop__implement__maintain__upgrade__test_cybersecurity_pr,
+        ecsf:task_Document_and_report_on_the_security_of_systems__services_and,
+        ecsf:task_Implement__apply_and_manage_patches_to_products_to_address_t,
+        ecsf:task_Implement_cybersecurity_procedures_and_controls,
+        ecsf:task_Integrate_cybersecurity_solutions_and_ensure_their_sound_ope,
+        ecsf:task_Maintain_and_upgrade_the_security_of_systems__services_and_p,
+        ecsf:task_Monitor_and_assure_the_performance_of_the_implemented_cybers,
+        ecsf:task_Provide_cybersecurity_related_support_to_users_and_customers,
+        ecsf:task_Securely_configure_systems__services_and_products,
+        ecsf:task_Work_close_with_the_IT_OT_personnel_on_cybersecurity_related .
+
+ecsf:Cybersecurity_Researcher a ecsf:Role ;
+    rdfs:label "Cybersecurity Researcher" ;
+    ecsf:hasKnowledge ecsf:knowledge_Cybersecurity_related_research__development_and_innovation__,
+        ecsf:knowledge_Cybersecurity_standards__methodologies_and_frameworks,
+        ecsf:knowledge_Legal__regulatory_and_legislative_requirements_on_releasing_,
+        ecsf:knowledge_Multidiscipline_aspect_of_cybersecurity,
+        ecsf:knowledge_Responsible_information_disclosure_procedures ;
+    ecsf:hasSkill ecsf:skill_Collaborate_with_other_team_members_and_colleagues,
+        ecsf:skill_Communicate__present_and_report_to_relevant_stakeholders,
+        ecsf:skill_Decompose_and_analyse_systems_to_develop_security_and_privac,
+        ecsf:skill_Decompose_and_analyse_systems_to_identify_weaknesses_and_ine,
+        ecsf:skill_Generate_new_ideas_and_transfer_theory_into_practice,
+        ecsf:skill_Identify_and_solve_cybersecurity_related_issues,
+        ecsf:skill_Monitor_new_advancements_in_cybersecurity_related_technologi ;
+    ecsf:hasTask ecsf:task_Advance_the_current_state_of_the_art_in_cybersecurity_relate,
+        ecsf:task_Analyse_and_assess_cybersecurity_technologies__solutions__de,
+        ecsf:task_Assist_in_cybersecurity_related_capacity_building_including_,
+        ecsf:task_Assist_in_the_development_of_innovative_cybersecurity_relate,
+        ecsf:task_Conduct_experiments_and_develop_a_proof_of_concept__pilots_a,
+        ecsf:task_Conduct_research__innovation_and_development_work_in_cyberse,
+        ecsf:task_Contributes_towards_cutting_edge_cybersecurity_business_idea,
+        ecsf:task_Identify_cross_sectoral_cybersecurity_achievements_and_apply,
+        ecsf:task_Lead_or_participate_in_the_innovation_processes_and_projects,
+        ecsf:task_Manifest_and_generate_research_and_innovation_ideas,
+        ecsf:task_Publish_and_present_scientific_works_and_research_and_develo,
+        ecsf:task_Select_and_apply_frameworks__methods__standards__tools_and_p .
+
+ecsf:Cybersecurity_Risk_Manager a ecsf:Role ;
+    rdfs:label "Cybersecurity Risk Manager" ;
+    ecsf:hasKnowledge ecsf:knowledge_Computer_systems_vulnerabilities,
+        ecsf:knowledge_Cyber_threats,
+        ecsf:knowledge_Cybersecurity_controls_and_solutions,
+        ecsf:knowledge_Cybersecurity_related_certifications,
+        ecsf:knowledge_Cybersecurity_related_technologies,
+        ecsf:knowledge_Cybersecurity_risks,
+        ecsf:knowledge_Monitoring__testing_and_evaluating_cybersecurity_controls__e,
+        ecsf:knowledge_Risk_management_recommendations_and_best_practices,
+        ecsf:knowledge_Risk_management_standards__methodologies_and_frameworks,
+        ecsf:knowledge_Risk_management_tools ;
+    ecsf:hasSkill ecsf:skill_Analyse_and_consolidate_organisation_s_quality_and_risk_mana,
+        ecsf:skill_Build_a_cybersecurity_risk_aware_environment,
+        ecsf:skill_Communicate__present_and_report_to_relevant_stakeholders,
+        ecsf:skill_Enable_business_assets_owners__executives_and_other_stakehol,
+        ecsf:skill_Implement_cybersecurity_risk_management_frameworks__methodol,
+        ecsf:skill_Propose_and_manage_risk_sharing_options ;
+    ecsf:hasTask ecsf:task_Assess_cybersecurity_risks_and_propose_most_appropriate_risk,
+        ecsf:task_Develop__maintain__report_and_communicate_complete_risk_mana,
+        ecsf:task_Develop_an_organisation_s_cybersecurity_risk_management_stra,
+        ecsf:task_Ensure_that_all_cybersecurity_risks_remain_at_an_acceptable_,
+        ecsf:task_Identification_of_threat_landscape_including_attackers__prof,
+        ecsf:task_Identify_and_assess_cybersecurity_related_threats_and_vulner,
+        ecsf:task_Manage_an_inventory_of_organisation_s_assets,
+        ecsf:task_Monitor_effectiveness_of_cybersecurity_controls_and_risk_lev .
+
+ecsf:Digital_Forensics_Investigator a ecsf:Role ;
+    rdfs:label "Digital Forensics Investigator" ;
+    ecsf:hasKnowledge ecsf:knowledge_Computer_networks_security,
+        ecsf:knowledge_Computer_systems_vulnerabilities,
+        ecsf:knowledge_Criminal_investigation_procedures__standards__methodologies_,
+        ecsf:knowledge_Cyber_threats,
+        ecsf:knowledge_Cybersecurity_attack_procedures,
+        ecsf:knowledge_Cybersecurity_related_certifications,
+        ecsf:knowledge_Cybersecurity_related_laws__regulations_and_legislations,
+        ecsf:knowledge_Digital_forensics_analysis_procedures,
+        ecsf:knowledge_Digital_forensics_recommendations_and_best_practices,
+        ecsf:knowledge_Digital_forensics_standards__methodologies_and_frameworks,
+        ecsf:knowledge_Malware_analysis_tools,
+        ecsf:knowledge_Operating_systems_security,
+        ecsf:knowledge_Testing_procedures ;
+    ecsf:hasSkill ecsf:skill_Collect_information_while_preserving_its_integrity,
+        ecsf:skill_Develop_and_communicate__detailed_and_reasoned_investigation,
+        ecsf:skill_Explain_and_present_digital_evidence_in_a_simple__straightfo,
+        ecsf:skill_Identify__analyse_and_correlate_cybersecurity_events,
+        ecsf:skill_Work_ethically_and_independently__not_influenced_and_biased_ ;
+    ecsf:hasTask ecsf:task_Develop_digital_forensics_investigation_policy__plans_and_pr,
+        ecsf:task_Identify__recover__extract__document_and_analyse_digital_evi,
+        ecsf:task_Inspect_environments_for_evidence_of_unauthorised_and_unlawf,
+        ecsf:task_Preserve_and_protect_digital_evidence_and_make_it_available_,
+        ecsf:task_Select_and_customise_forensics_testing__analysing_and_report,
+        ecsf:task_Systematically_and_deterministic_document__report_and_presen .
+
+ecsf:Penetration_Tester a ecsf:Role ;
+    rdfs:label "Penetration Tester" ;
+    ecsf:hasKnowledge ecsf:knowledge_Computer_networks_security,
+        ecsf:knowledge_Computer_programming,
+        ecsf:knowledge_Computer_systems_vulnerabilities,
+        ecsf:knowledge_Cybersecurity_attack_procedures,
+        ecsf:knowledge_Cybersecurity_recommendations_and_best_practices,
+        ecsf:knowledge_Cybersecurity_related_certifications,
+        ecsf:knowledge_Information_technology__IT__and_operational_technology__OT__,
+        ecsf:knowledge_Offensive_and_defensive_security_procedures,
+        ecsf:knowledge_Operating_systems_security,
+        ecsf:knowledge_Penetration_testing_procedures,
+        ecsf:knowledge_Penetration_testing_standards__methodologies_and_frameworks,
+        ecsf:knowledge_Penetration_testing_tools ;
+    ecsf:hasSkill ecsf:skill_Communicate__present_and_report_to_relevant_stakeholders,
+        ecsf:skill_Conduct_ethical_hacking,
+        ecsf:skill_Conduct_technical_analysis_and_reporting,
+        ecsf:skill_Decompose_and_analyse_systems_to_identify_weaknesses_and_ine,
+        ecsf:skill_Develop_codes__scripts_and_programmes,
+        ecsf:skill_Identify_and_exploit_vulnerabilities,
+        ecsf:skill_Identify_and_solve_cybersecurity_related_issues,
+        ecsf:skill_Perform_social_engineering,
+        ecsf:skill_Review_codes_assess_their_security,
+        ecsf:skill_Think_creatively_and_outside_the_box,
+        ecsf:skill_Use_penetration_testing_tools_effectively ;
+    ecsf:hasTask ecsf:task_Deploy_penetration_testing_tools_and_test_programs,
+        ecsf:task_Document_and_report_penetration_testing_results_to_stakehold,
+        ecsf:task_Establish_procedures_for_penetration_testing_result_analysis,
+        ecsf:task_Identify__analyse_and_assess_technical_and_organisational_cy,
+        ecsf:task_Identify_attack_vectors__uncover_and_demonstrate_exploitatio,
+        ecsf:task_Organise_test_plans_and_procedures_for_penetration_testing,
+        ecsf:task_Select_and_develop_appropriate_penetration_testing_technique,
+        ecsf:task_Test_systems_and_operations_compliance_with_regulatory_stand .
+
+ecsf:hasKnowledge a owl:ObjectProperty .
+
+ecsf:hasSkill a owl:ObjectProperty .
+
+ecsf:hasTask a owl:ObjectProperty .
+
+ecsf:relatedTo a owl:SymmetricProperty .
+
+ecsf:knowledge_Advanced_and_persistent_cyber_threats__APT_ a ecsf:KnowledgeItem ;
+    rdfs:label "Advanced and persistent cyber threats (APT)" .
+
+ecsf:knowledge_Auditing_related_certification a ecsf:KnowledgeItem ;
+    rdfs:label "Auditing-related certification" .
+
+ecsf:knowledge_Auditing_standards__methodologies_and_frameworks a ecsf:KnowledgeItem ;
+    rdfs:label "Auditing standards, methodologies and frameworks" .
+
+ecsf:knowledge_Computer_Security_Incident_Response_Teams__CSIRTs__operation a ecsf:KnowledgeItem ;
+    rdfs:label "Computer Security Incident Response Teams (CSIRTs) operation" .
+
+ecsf:knowledge_Conformity_assessment_standards__methodologies_and_framework a ecsf:KnowledgeItem ;
+    rdfs:label "Conformity assessment standards, methodologies and frameworks" .
+
+ecsf:knowledge_Criminal_investigation_procedures__standards__methodologies_ a ecsf:KnowledgeItem ;
+    rdfs:label "Criminal investigation procedures, standards, methodologies and frameworks" .
+
+ecsf:knowledge_Cross_domain_and_border_domain_knowledge_related_to_cybersec a ecsf:KnowledgeItem ;
+    rdfs:label "Cross-domain and border-domain knowledge related to cybersecurity" .
+
+ecsf:knowledge_Cyber_Threat_Intelligence__CTI__sharing_standards__methodolo a ecsf:KnowledgeItem ;
+    rdfs:label "Cyber Threat Intelligence (CTI) sharing standards, methodologies and frameworks" .
+
+ecsf:knowledge_Cyber_threat_actors a ecsf:KnowledgeItem ;
+    rdfs:label "Cyber threat actors" .
+
+ecsf:knowledge_Cybersecurity_awareness__education_and_training_programme_de a ecsf:KnowledgeItem ;
+    rdfs:label "Cybersecurity awareness, education and training programme development" .
+
+ecsf:knowledge_Cybersecurity_education_and_training_standards__methodologie a ecsf:KnowledgeItem ;
+    rdfs:label "Cybersecurity education and training standards, methodologies and frameworks" .
+
+ecsf:knowledge_Cybersecurity_maturity_models a ecsf:KnowledgeItem ;
+    rdfs:label "Cybersecurity maturity models" .
+
+ecsf:knowledge_Cybersecurity_procedures a ecsf:KnowledgeItem ;
+    rdfs:label "Cybersecurity procedures" .
+
+ecsf:knowledge_Cybersecurity_related_requirements_analysis a ecsf:KnowledgeItem ;
+    rdfs:label "Cybersecurity-related requirements analysis" .
+
+ecsf:knowledge_Cybersecurity_related_research__development_and_innovation__ a ecsf:KnowledgeItem ;
+    rdfs:label "Cybersecurity-related research, development and innovation (RDI)" .
+
+ecsf:knowledge_Cybersecurity_trends a ecsf:KnowledgeItem ;
+    rdfs:label "Cybersecurity trends" .
+
+ecsf:knowledge_Digital_forensics_analysis_procedures a ecsf:KnowledgeItem ;
+    rdfs:label "Digital forensics analysis procedures" .
+
+ecsf:knowledge_Digital_forensics_recommendations_and_best_practices a ecsf:KnowledgeItem ;
+    rdfs:label "Digital forensics recommendations and best practices" .
+
+ecsf:knowledge_Digital_forensics_standards__methodologies_and_frameworks a ecsf:KnowledgeItem ;
+    rdfs:label "Digital forensics standards, methodologies and frameworks" .
+
+ecsf:knowledge_Ethical_cybersecurity_organisation_requirements a ecsf:KnowledgeItem ;
+    rdfs:label "Ethical cybersecurity organisation requirements" .
+
+ecsf:knowledge_Incident_handling_communication_procedures a ecsf:KnowledgeItem ;
+    rdfs:label "Incident handling communication procedures" .
+
+ecsf:knowledge_Incident_handling_recommendations_and_best_practices a ecsf:KnowledgeItem ;
+    rdfs:label "Incident handling recommendations and best practices" .
+
+ecsf:knowledge_Incident_handling_standards__methodologies_and_frameworks a ecsf:KnowledgeItem ;
+    rdfs:label "Incident handling standards, methodologies and frameworks" .
+
+ecsf:knowledge_Incident_handling_tools a ecsf:KnowledgeItem ;
+    rdfs:label "Incident handling tools" .
+
+ecsf:knowledge_Information_technology__IT__and_operational_technology__OT__ a ecsf:KnowledgeItem ;
+    rdfs:label "Information technology (IT) and operational technology (OT) appliances" .
+
+ecsf:knowledge_Legacy_cybersecurity_procedures a ecsf:KnowledgeItem ;
+    rdfs:label "Legacy cybersecurity procedures" .
+
+ecsf:knowledge_Legal__regulatory_and_legislative_requirements_on_releasing_ a ecsf:KnowledgeItem ;
+    rdfs:label "Legal, regulatory and legislative requirements on releasing or using cybersecurity  related technologies" .
+
+ecsf:knowledge_Malware_analysis_tools a ecsf:KnowledgeItem ;
+    rdfs:label "Malware analysis tools" .
+
+ecsf:knowledge_Management_practices a ecsf:KnowledgeItem ;
+    rdfs:label "Management practices" .
+
+ecsf:knowledge_Multidiscipline_aspect_of_cybersecurity a ecsf:KnowledgeItem ;
+    rdfs:label "Multidiscipline aspect of cybersecurity" .
+
+ecsf:knowledge_Offensive_and_defensive_security_practices a ecsf:KnowledgeItem ;
+    rdfs:label "Offensive and defensive security practices" .
+
+ecsf:knowledge_Offensive_and_defensive_security_procedures a ecsf:KnowledgeItem ;
+    rdfs:label "Offensive and defensive security procedures" .
+
+ecsf:knowledge_Pedagogical_standards__methodologies_and_frameworks a ecsf:KnowledgeItem ;
+    rdfs:label "Pedagogical standards, methodologies and frameworks" .
+
+ecsf:knowledge_Penetration_testing_procedures a ecsf:KnowledgeItem ;
+    rdfs:label "Penetration testing procedures" .
+
+ecsf:knowledge_Penetration_testing_standards__methodologies_and_frameworks a ecsf:KnowledgeItem ;
+    rdfs:label "Penetration testing standards, methodologies and frameworks" .
+
+ecsf:knowledge_Penetration_testing_tools a ecsf:KnowledgeItem ;
+    rdfs:label "Penetration testing tools" .
+
+ecsf:knowledge_Privacy_Enhancing_Technologies__PET_ a ecsf:KnowledgeItem ;
+    rdfs:label "Privacy-Enhancing Technologies (PET)" .
+
+ecsf:knowledge_Privacy_impact_assessment_standards__methodologies_and_frame a ecsf:KnowledgeItem ;
+    rdfs:label "Privacy impact assessment standards, methodologies and frameworks" .
+
+ecsf:knowledge_Resource_management a ecsf:KnowledgeItem ;
+    rdfs:label "Resource management" .
+
+ecsf:knowledge_Risk_management_recommendations_and_best_practices a ecsf:KnowledgeItem ;
+    rdfs:label "Risk management recommendations and best practices" .
+
+ecsf:knowledge_Risk_management_tools a ecsf:KnowledgeItem ;
+    rdfs:label "Risk management tools" .
+
+ecsf:knowledge_Secure_Operation_Centres__SOCs__operation a ecsf:KnowledgeItem ;
+    rdfs:label "Secure Operation Centres (SOCs) operation" .
+
+ecsf:knowledge_Secure_coding_recommendations_and_best_practices a ecsf:KnowledgeItem ;
+    rdfs:label "Secure coding recommendations and best practices" .
+
+ecsf:knowledge_Security_architecture_reference_models a ecsf:KnowledgeItem ;
+    rdfs:label "Security architecture reference models" .
+
+ecsf:knowledge_Testing_standards__methodologies_and_frameworks a ecsf:KnowledgeItem ;
+    rdfs:label "Testing standards, methodologies and frameworks" .
+
+ecsf:knowledge_Threat_actors_Tactics__Techniques_and_Procedures__TTPs_ a ecsf:KnowledgeItem ;
+    rdfs:label "Threat actors Tactics, Techniques and Procedures (TTPs)" .
+
+ecsf:skill_Analyse_and_comply_with_cybersecurity_related_laws__regulati a ecsf:Skill ;
+    rdfs:label "Analyse and comply with cybersecurity-related laws, regulations and legislations" .
+
+ecsf:skill_Analyse_and_consolidate_organisation_s_quality_and_risk_mana a ecsf:Skill ;
+    rdfs:label "Analyse and consolidate organisation’s quality and risk management practices" .
+
+ecsf:skill_Analyse_and_implement_cybersecurity_policies__certifications a ecsf:Skill ;
+    rdfs:label "Analyse and implement cybersecurity policies, certifications, standards, methodologies and frameworks" ;
+    ecsf:relatedTo ecsf:skill_Follow_and_practice_auditing_frameworks__standards_and_metho,
+        ecsf:skill_Implement_cybersecurity_risk_management_frameworks__methodol .
+
+ecsf:skill_Analyse_business_processes__assess_and_review_software_or_ha a ecsf:Skill ;
+    rdfs:label "Analyse business processes, assess and review software or hardware security, as  well as technical and organisational controls" ;
+    ecsf:relatedTo ecsf:skill_Assess_the_security_and_performance_of_solutions,
+        ecsf:skill_Review_codes_assess_their_security .
+
+ecsf:skill_Anticipate_cybersecurity_threats__needs_and_upcoming_challen a ecsf:Skill ;
+    rdfs:label "Anticipate cybersecurity threats, needs and upcoming challenges" .
+
+ecsf:skill_Anticipate_required_changes_to_the_organisation_s_informatio a ecsf:Skill ;
+    rdfs:label "Anticipate required changes to the organisation’s information security strategy and formulate new plans" .
+
+ecsf:skill_Assess_and_enhance_an_organisation_s_cybersecurity_posture a ecsf:Skill ;
+    rdfs:label "Assess and enhance an organisation’s cybersecurity posture" ;
+    ecsf:relatedTo ecsf:skill_Influence_an_organisation_s_cybersecurity_culture .
+
+ecsf:skill_Audit_with_integrity__being_impartial_and_independent a ecsf:Skill ;
+    rdfs:label "Audit with integrity, being impartial and independent" .
+
+ecsf:skill_Automate_threat_intelligence_management_procedures a ecsf:Skill ;
+    rdfs:label "Automate threat intelligence management procedures" .
+
+ecsf:skill_Build_a_cybersecurity_risk_aware_environment a ecsf:Skill ;
+    rdfs:label "Build a cybersecurity risk-aware environment" .
+
+ecsf:skill_Build_resilience_against_points_of_failure_across_the_archit a ecsf:Skill ;
+    rdfs:label "Build resilience against points of failure across the architecture" .
+
+ecsf:skill_Carry_out_working_life_practices_of_the_data_protection_and_ a ecsf:Skill ;
+    rdfs:label "Carry out working-life practices of the data protection and privacy issues involved in  the implementation of the organisational processes, finance and business strategy" .
+
+ecsf:skill_Collaborate_with_other_team_members_and_colleague a ecsf:Skill ;
+    rdfs:label "Collaborate with other team members and colleague" ;
+    ecsf:relatedTo ecsf:skill_Collaborate_with_other_team_members_and_colleagues .
+
+ecsf:skill_Collect__evaluate__maintain_and_protect_auditing_information a ecsf:Skill ;
+    rdfs:label "Collect, evaluate, maintain and protect auditing information" .
+
+ecsf:skill_Collect_information_while_preserving_its_integrity a ecsf:Skill ;
+    rdfs:label "Collect information while preserving its integrity" .
+
+ecsf:skill_Comprehensive_understanding_of_the_business_strategy__models a ecsf:Skill ;
+    rdfs:label "Comprehensive understanding of the business strategy, models and products and  ability to factor into legal, regulatory and standards’ requirements" ;
+    ecsf:relatedTo ecsf:skill_Communicate__explain_and_adapt_legal_and_regulatory_requirem .
+
+ecsf:skill_Conduct__monitor_and_review_privacy_impact_assessments_using a ecsf:Skill ;
+    rdfs:label "Conduct, monitor and review privacy impact assessments using standards,  frameworks, acknowledged methodologies and tools" ;
+    ecsf:relatedTo ecsf:skill_Follow_and_practice_auditing_frameworks__standards_and_metho .
+
+ecsf:skill_Conduct_ethical_hacking a ecsf:Skill ;
+    rdfs:label "Conduct ethical hacking" .
+
+ecsf:skill_Define_and_apply_maturity_models_for_cybersecurity_managemen a ecsf:Skill ;
+    rdfs:label "Define and apply maturity models for cybersecurity management" .
+
+ecsf:skill_Design__apply__monitor_and_review_Information_Security_Manag a ecsf:Skill ;
+    rdfs:label "Design, apply, monitor and review Information Security Management System (ISMS) either directly or by leading its outsourcing" .
+
+ecsf:skill_Design__develop_and_deliver_learning_programmes_to_cover_cyb a ecsf:Skill ;
+    rdfs:label "Design, develop and deliver learning programmes to cover cybersecurity needs" ;
+    ecsf:relatedTo ecsf:skill_Develop_code__scripts_and_programmes,
+        ecsf:skill_Develop_codes__scripts_and_programmes .
+
+ecsf:skill_Design_systems_and_architectures_based_on_security_and_priva a ecsf:Skill ;
+    rdfs:label "Design systems and architectures based on security and privacy by design and by  defaults cybersecurity principles" .
+
+ecsf:skill_Develop__champion_and_lead_the_execution_of_a_cybersecurity_ a ecsf:Skill ;
+    rdfs:label "Develop, champion and lead the execution of a cybersecurity strategy" .
+
+ecsf:skill_Develop_and_communicate__detailed_and_reasoned_investigation a ecsf:Skill ;
+    rdfs:label "Develop and communicate, detailed and reasoned investigation reports" .
+
+ecsf:skill_Develop_cybersecurity_exercises_including_simulations_using_ a ecsf:Skill ;
+    rdfs:label "Develop cybersecurity exercises including simulations using cyber range  environments" .
+
+ecsf:skill_Draw_cybersecurity_architectural_and_functional_specificatio a ecsf:Skill ;
+    rdfs:label "Draw cybersecurity architectural and functional specifications" .
+
+ecsf:skill_Enable_business_assets_owners__executives_and_other_stakehol a ecsf:Skill ;
+    rdfs:label "Enable business assets owners, executives and other stakeholders to make risk informed decisions to manage and mitigate risks" .
+
+ecsf:skill_Establish_a_cybersecurity_plan a ecsf:Skill ;
+    rdfs:label "Establish a cybersecurity plan" .
+
+ecsf:skill_Explain_and_communicate_data_protection_and_privacy_topics_t a ecsf:Skill ;
+    rdfs:label "Explain and communicate data protection and privacy topics to stakeholders and  users" .
+
+ecsf:skill_Explain_and_present_digital_evidence_in_a_simple__straightfo a ecsf:Skill ;
+    rdfs:label "Explain and present digital evidence in a simple, straightforward and easy to  understand way" .
+
+ecsf:skill_Generate_new_ideas_and_transfer_theory_into_practice a ecsf:Skill ;
+    rdfs:label "Generate new ideas and transfer theory into practice" .
+
+ecsf:skill_Guide_and_communicate_with_implementers_and_IT_OT_personnel a ecsf:Skill ;
+    rdfs:label "Guide and communicate with implementers and IT/OT personnel" .
+
+ecsf:skill_Identify__analyse_and_correlate_cybersecurity_events a ecsf:Skill ;
+    rdfs:label "Identify, analyse and correlate cybersecurity events" .
+
+ecsf:skill_Identify_and_exploit_vulnerabilities a ecsf:Skill ;
+    rdfs:label "Identify and exploit vulnerabilities" .
+
+ecsf:skill_Identify_and_select_appropriate_pedagogical_approaches_for_t a ecsf:Skill ;
+    rdfs:label "Identify and select appropriate pedagogical approaches for the intended audience" .
+
+ecsf:skill_Identify_needs_in_cybersecurity_awareness__training_and_educ a ecsf:Skill ;
+    rdfs:label "Identify needs in cybersecurity awareness, training and education" ;
+    ecsf:relatedTo ecsf:skill_Develop_evaluation_programs_for_the_awareness__training_and_ .
+
+ecsf:skill_Identify_non_cyber_events_with_implications_on_cyber_related a ecsf:Skill ;
+    rdfs:label "Identify non-cyber events with implications on cyber-related activities" .
+
+ecsf:skill_Identify_threat_actors_TTPs_and_campaigns a ecsf:Skill ;
+    rdfs:label "Identify threat actors TTPs and campaigns" ;
+    ecsf:relatedTo ecsf:skill_Model_threats__actors_and_TTPs .
+
+ecsf:skill_Implement_cybersecurity_recommendations_and_best_practices a ecsf:Skill ;
+    rdfs:label "Implement cybersecurity recommendations and best practices" .
+
+ecsf:skill_Lead_the_development_of_appropriate_cybersecurity_and_privac a ecsf:Skill ;
+    rdfs:label "Lead the development of appropriate cybersecurity and privacy policies and  procedures that complement the business needs and legal requirements; further  ensure its acceptance, comprehension and implementation and communicate it  between the involved parties" ;
+    ecsf:relatedTo ecsf:skill_Communicate__explain_and_adapt_legal_and_regulatory_requirem .
+
+ecsf:skill_Manage_and_analyse_log_files a ecsf:Skill ;
+    rdfs:label "Manage and analyse log files" .
+
+ecsf:skill_Manage_cybersecurity_resources a ecsf:Skill ;
+    rdfs:label "Manage cybersecurity resources" ;
+    ecsf:relatedTo ecsf:skill_Utilise_existing_cybersecurity_related_training_resources .
+
+ecsf:skill_Monitor_new_advancements_in_cybersecurity_related_technologi a ecsf:Skill ;
+    rdfs:label "Monitor new advancements in cybersecurity-related technologies" .
+
+ecsf:skill_Organise_and_work_in_a_systematic_and_deterministic_way_base a ecsf:Skill ;
+    rdfs:label "Organise and work in a systematic and deterministic way based on evidence" .
+
+ecsf:skill_Perform_social_engineering a ecsf:Skill ;
+    rdfs:label "Perform social engineering" .
+
+ecsf:skill_Practice_all_technical__functional_and_operational_aspects_o a ecsf:Skill ;
+    rdfs:label "Practice all technical, functional and operational aspects of cybersecurity incident  handling and response" .
+
+ecsf:skill_Propose_and_manage_risk_sharing_options a ecsf:Skill ;
+    rdfs:label "Propose and manage risk-sharing options" .
+
+ecsf:skill_Propose_cybersecurity_architectures_based_on_stakeholder_s_n a ecsf:Skill ;
+    rdfs:label "Propose cybersecurity architectures based on stakeholder’s needs and budget" .
+
+ecsf:skill_Provide_training_towards_cybersecurity_and_data_protection_p a ecsf:Skill ;
+    rdfs:label "Provide training towards cybersecurity and data protection professional certifications" .
+
+ecsf:skill_Review_and_enhance_security_documents__reports__SLAs_and_ens a ecsf:Skill ;
+    rdfs:label "Review and enhance security documents, reports, SLAs and ensure the security objectives" .
+
+ecsf:skill_Select_appropriate_specifications__procedures_and_controls a ecsf:Skill ;
+    rdfs:label "Select appropriate specifications, procedures and controls" .
+
+ecsf:skill_Think_creatively_and_outside_the_box a ecsf:Skill ;
+    rdfs:label "Think creatively and outside the box" .
+
+ecsf:skill_Understand__practice_and_adhere_to_ethical_requirements_and_ a ecsf:Skill ;
+    rdfs:label "Understand, practice and adhere to ethical requirements and standards" .
+
+ecsf:skill_Use_and_apply_CTI_platforms_and_tools a ecsf:Skill ;
+    rdfs:label "Use and apply CTI platforms and tools" ;
+    ecsf:relatedTo ecsf:skill_Apply_auditing_tools_and_techniques .
+
+ecsf:skill_Use_penetration_testing_tools_effectively a ecsf:Skill ;
+    rdfs:label "Use penetration testing tools effectively" .
+
+ecsf:skill_Work_ethically_and_independently__not_influenced_and_biased_ a ecsf:Skill ;
+    rdfs:label "Work ethically and independently; not influenced and biased by internal or external  actors" .
+
+ecsf:skill_Work_on_operating_systems__servers__clouds_and_relevant_infr a ecsf:Skill ;
+    rdfs:label "Work on operating systems, servers, clouds and relevant infrastructures" .
+
+ecsf:skill_Work_under_pressure a ecsf:Skill ;
+    rdfs:label "Work under pressure" .
+
+ecsf:task_Act_as_a_key_contact_point_to_handle_queries_and_complaints_ a ecsf:Task ;
+    rdfs:label "Act as a key contact point to handle queries and complaints regarding data  processing" .
+
+ecsf:task_Adapt_the_organisation_s_architecture_to_emerging_threats a ecsf:Task ;
+    rdfs:label "Adapt the organisation’s architecture to emerging threats" .
+
+ecsf:task_Advance_the_current_state_of_the_art_in_cybersecurity_relate a ecsf:Task ;
+    rdfs:label "Advance the current state-of-the-art in cybersecurity-related topics" .
+
+ecsf:task_Analyse_and_assess_cybersecurity_technologies__solutions__de a ecsf:Task ;
+    rdfs:label "Analyse and assess cybersecurity technologies, solutions, developments and  processes" .
+
+ecsf:task_Analyse_and_evaluate_the_cybersecurity_of_the_organisation_s a ecsf:Task ;
+    rdfs:label "Analyse and evaluate the cybersecurity of the organisation’s architecture" .
+
+ecsf:task_Articulate_and_communicate_intelligence_openly_and_publicly_ a ecsf:Task ;
+    rdfs:label "Articulate and communicate intelligence openly and publicly at all levels" .
+
+ecsf:task_Assess_cybersecurity_risks_and_propose_most_appropriate_risk a ecsf:Task ;
+    rdfs:label "Assess cybersecurity risks and propose most appropriate risk treatment options,  including security controls and risk mitigation and avoidance that best address the  organisation’s strategy" .
+
+ecsf:task_Assess_the_implemented_architecture_to_maintain_an_appropria a ecsf:Task ;
+    rdfs:label "Assess the implemented architecture to maintain an appropriate level of security" .
+
+ecsf:task_Assist_in_cybersecurity_related_capacity_building_including_ a ecsf:Task ;
+    rdfs:label "Assist in cybersecurity-related capacity building including awareness, theoretical  training, practical training, testing, mentoring, supervising and sharing" .
+
+ecsf:task_Assist_in_designing__implementing__auditing_and_compliance_t a ecsf:Task ;
+    rdfs:label "Assist in designing, implementing, auditing and compliance testing activities in order  to ensure cybersecurity and privacy compliance" .
+
+ecsf:task_Assist_in_the_development_of_innovative_cybersecurity_relate a ecsf:Task ;
+    rdfs:label "Assist in the development of innovative cybersecurity-related solutions" .
+
+ecsf:task_Assure_the_security_of_the_solution_architectures_through_se a ecsf:Task ;
+    rdfs:label "Assure the security of the solution architectures through security reviews and  certification" .
+
+ecsf:task_Audit_compliance_with_cybersecurity_related_applicable_laws_ a ecsf:Task ;
+    rdfs:label "Audit compliance with cybersecurity-related applicable laws and regulations" .
+
+ecsf:task_Audit_conformity_with_cybersecurity_related_applicable_stand a ecsf:Task ;
+    rdfs:label "Audit conformity with cybersecurity-related applicable standards" .
+
+ecsf:task_Collaborate_with_other_teams_and_colleagues a ecsf:Task ;
+    rdfs:label "Collaborate with other teams and colleagues" .
+
+ecsf:task_Conduct_experiments_and_develop_a_proof_of_concept__pilots_a a ecsf:Task ;
+    rdfs:label "Conduct experiments and develop a proof of concept, pilots and prototypes for  cybersecurity solutions" .
+
+ecsf:task_Conduct_privacy_impact_assessments_and_develop__maintain__co a ecsf:Task ;
+    rdfs:label "Conduct privacy impact assessments and develop, maintain, communicate and train  upon the privacy policies, procedures" .
+
+ecsf:task_Conduct_research__innovation_and_development_work_in_cyberse a ecsf:Task ;
+    rdfs:label "Conduct research, innovation and development work in cybersecurity-related topics" .
+
+ecsf:task_Continuously_maintain_and_enhance_expertise__encourage_and_e a ecsf:Task ;
+    rdfs:label "Continuously maintain and enhance expertise; encourage and empower continuous  enhancement of cybersecurity capacities and capabilities building" .
+
+ecsf:task_Contribute_to_the_development_of_the_organisation_s_cybersec a ecsf:Task ;
+    rdfs:label "Contribute to the development of the organisation’s cybersecurity strategy, policy  and procedures" .
+
+ecsf:task_Contributes_towards_cutting_edge_cybersecurity_business_idea a ecsf:Task ;
+    rdfs:label "Contributes towards cutting-edge cybersecurity business ideas, services and  solutions" .
+
+ecsf:task_Convey_the_proper_security_severity_by_explaining_the_risk_e a ecsf:Task ;
+    rdfs:label "Convey the proper security severity by explaining the risk exposure and its  consequences to non-technical stakeholders" .
+
+ecsf:task_Cooperate_and_share_information_with_authorities_and_profess a ecsf:Task ;
+    rdfs:label "Cooperate and share information with authorities and professional groups" .
+
+ecsf:task_Coordinate_the_development__integration_and_maintenance_of_c a ecsf:Task ;
+    rdfs:label "Coordinate the development, integration and maintenance of cybersecurity  components ensuring the cybersecurity specifications" .
+
+ecsf:task_Coordinate_with_stakeholders_to_share_and_consume_intelligen a ecsf:Task ;
+    rdfs:label "Coordinate with stakeholders to share and consume intelligence on relevant cyber  threats" .
+
+ecsf:task_Cybersecurity_maturity_models a ecsf:Task ;
+    rdfs:label "Cybersecurity maturity models" .
+
+ecsf:task_Cybersecurity_policies a ecsf:Task ;
+    rdfs:label "Cybersecurity policies" .
+
+ecsf:task_Cybersecurity_procedures a ecsf:Task ;
+    rdfs:label "Cybersecurity procedures" .
+
+ecsf:task_Cybersecurity_recommendations_and_best_practices a ecsf:Task ;
+    rdfs:label "Cybersecurity recommendations and best practices" .
+
+ecsf:task_Cybersecurity_related_certifications a ecsf:Task ;
+    rdfs:label "Cybersecurity-related certifications" .
+
+ecsf:task_Cybersecurity_related_laws__regulations_and_legislations a ecsf:Task ;
+    rdfs:label "Cybersecurity related laws, regulations and legislations" .
+
+ecsf:task_Cybersecurity_standards__methodologies_and_frameworks a ecsf:Task ;
+    rdfs:label "Cybersecurity standards, methodologies and frameworks" .
+
+ecsf:task_Define__implement__communicate_and_maintain_cybersecurity_go a ecsf:Task ;
+    rdfs:label "Define, implement, communicate and maintain cybersecurity goals, requirements," .
+
+ecsf:task_Define_audit_scope__objectives_and_criteria_to_audit_against a ecsf:Task ;
+    rdfs:label "Define audit scope, objectives and criteria to audit against" .
+
+ecsf:task_Deploy_penetration_testing_tools_and_test_programs a ecsf:Task ;
+    rdfs:label "Deploy penetration testing tools and test programs" .
+
+ecsf:task_Design__develop_and_deliver_cybersecurity_simulations__virtu a ecsf:Task ;
+    rdfs:label "Design, develop and deliver cybersecurity simulations, virtual labs or cyber range  environments" .
+
+ecsf:task_Design_and_propose_a_secure_architecture_to_implement_the_or a ecsf:Task ;
+    rdfs:label "Design and propose a secure architecture to implement the organisation’s strategy" .
+
+ecsf:task_Develop__implement__maintain__upgrade__test_cybersecurity_pr a ecsf:Task ;
+    rdfs:label "Develop, implement, maintain, upgrade, test cybersecurity products" .
+
+ecsf:task_Develop__implement_and_manage_the_organisation_s_cyber_threa a ecsf:Task ;
+    rdfs:label "Develop, implement and manage the organisation's cyber threat intelligence  strategy" .
+
+ecsf:task_Develop__maintain__report_and_communicate_complete_risk_mana a ecsf:Task ;
+    rdfs:label "Develop, maintain, report and communicate complete risk management cycle" .
+
+ecsf:task_Develop__update_and_deliver_cybersecurity_and_data_protectio a ecsf:Task ;
+    rdfs:label "Develop, update and deliver cybersecurity and data protection curricula and  educational material for training and awareness based on content, method, tools,  trainees need" .
+
+ecsf:task_Develop_an_audit_plan_describing_the_frameworks__standards__ a ecsf:Task ;
+    rdfs:label "Develop an audit plan describing the frameworks, standards, methodology,  procedures and auditing tests" .
+
+ecsf:task_Develop_an_organisation_s_cybersecurity_risk_management_stra a ecsf:Task ;
+    rdfs:label "Develop an organisation’s cybersecurity risk management strategy" .
+
+ecsf:task_Develop_and_communicate_conformity_assessment__assurance__au a ecsf:Task ;
+    rdfs:label "Develop and communicate conformity assessment, assurance, audit, certification  and maintenance reports" .
+
+ecsf:task_Develop_and_propose_staff_awareness_training_to_achieve_comp a ecsf:Task ;
+    rdfs:label "Develop and propose staff awareness training to achieve compliance and foster a  culture of data protection within the organization" .
+
+ecsf:task_Develop_cybersecurity_plans a ecsf:Task ;
+    rdfs:label "Develop cybersecurity plans" .
+
+ecsf:task_Develop_digital_forensics_investigation_policy__plans_and_pr a ecsf:Task ;
+    rdfs:label "Develop digital forensics investigation policy, plans and procedures" .
+
+ecsf:task_Develop_organisation_s_cybersecurity_architecture_to_address a ecsf:Task ;
+    rdfs:label "Develop organisation’s cybersecurity architecture to address security and privacy  requirements" .
+
+ecsf:task_Develop_plans_and_procedures_to_manage_threat_intelligence a ecsf:Task ;
+    rdfs:label "Develop plans and procedures to manage threat intelligence" .
+
+ecsf:task_Develop_relationships_with_cybersecurity_related_authorities a ecsf:Task ;
+    rdfs:label "Develop relationships with cybersecurity-related authorities and communities" .
+
+ecsf:task_Develop_the_organisation_s_auditing_policy__procedures__stan a ecsf:Task ;
+    rdfs:label "Develop the organisation's auditing policy, procedures, standards and guidelines" .
+
+ecsf:task_Document_and_report_on_the_security_of_systems__services_and a ecsf:Task ;
+    rdfs:label "Document and report on the security of systems, services and products" .
+
+ecsf:task_Document_and_report_penetration_testing_results_to_stakehold a ecsf:Task ;
+    rdfs:label "Document and report penetration testing results to stakeholders" .
+
+ecsf:task_Educate_senior_management_about_cybersecurity_risks__threats a ecsf:Task ;
+    rdfs:label "Educate senior management about cybersecurity risks, threats and their impact to" .
+
+ecsf:task_Elaborate_and_advise_on_mitigation_plans_at_the_tactical__op a ecsf:Task ;
+    rdfs:label "Elaborate and advise on mitigation plans at the tactical, operational and strategic  level" .
+
+ecsf:task_Enforce_and_advocate_organisation_s_data_privacy_and_protect a ecsf:Task ;
+    rdfs:label "Enforce and advocate organisation’s data privacy and protection program" .
+
+ecsf:task_Ensure_compliance_with_and_provide_legal_advice_and_guidance a ecsf:Task ;
+    rdfs:label "Ensure compliance with and provide legal advice and guidance on data privacy and  data protection standards, laws and regulations" .
+
+ecsf:task_Ensure_that_all_cybersecurity_risks_remain_at_an_acceptable_ a ecsf:Task ;
+    rdfs:label "Ensure that all cybersecurity risks remain at an acceptable level for the  organisation’s assets" .
+
+ecsf:task_Ensure_that_data_owners__holders__controllers__processors__s a ecsf:Task ;
+    rdfs:label "Ensure that data owners, holders, controllers, processors, subjects, internal or  external partners and entities are informed about their data protection rights,  obligations and responsibilities" .
+
+ecsf:task_Ensure_the_organisation_s_resiliency_to_cyber_incidents a ecsf:Task ;
+    rdfs:label "Ensure the organisation’s resiliency to cyber incidents" .
+
+ecsf:task_Ensure_the_senior_management_approves_the_cybersecurity_risk a ecsf:Task ;
+    rdfs:label "Ensure the senior management approves the cybersecurity risks of the organisation" .
+
+ecsf:task_Establish_a_secure_environment_during_the_development_lifecy a ecsf:Task ;
+    rdfs:label "Establish a secure environment during the development lifecycle of systems,  services and products" .
+
+ecsf:task_Establish_procedures_for_penetration_testing_result_analysis a ecsf:Task ;
+    rdfs:label "Establish procedures for penetration testing result analysis and reporting" .
+
+ecsf:task_Establish_the_methodologies_and_practices_used_for_systems_a a ecsf:Task ;
+    rdfs:label "Establish the methodologies and practices used for systems auditing" .
+
+ecsf:task_Establish_the_target_environment_and_manage_auditing_activit a ecsf:Task ;
+    rdfs:label "Establish the target environment and manage auditing activities" .
+
+ecsf:task_Ethical_cybersecurity_organisation_requirements a ecsf:Task ;
+    rdfs:label "Ethical cybersecurity organisation requirements" .
+
+ecsf:task_Evaluate_and_report_trainee_s_performance a ecsf:Task ;
+    rdfs:label "Evaluate and report trainee’s performance" .
+
+ecsf:task_Evaluate_the_impact_of_cybersecurity_solutions_on_the_design a ecsf:Task ;
+    rdfs:label "Evaluate the impact of cybersecurity solutions on the design" .
+
+ecsf:task_Execute_the_audit_plan_and_collect_evidence_and_measurements a ecsf:Task ;
+    rdfs:label "Execute the audit plan and collect evidence and measurements" .
+
+ecsf:task_Finding_new_approaches_for_education__training_and_awareness a ecsf:Task ;
+    rdfs:label "Finding new approaches for education, training and awareness-raising" .
+
+ecsf:task_Identification_of_threat_landscape_including_attackers__prof a ecsf:Task ;
+    rdfs:label "Identification of threat landscape including attackers’ profiles and estimation of  attacks’ potential" .
+
+ecsf:task_Identify__analyse_and_assess_technical_and_organisational_cy a ecsf:Task ;
+    rdfs:label "Identify, analyse and assess technical and organisational cybersecurity  vulnerabilities" .
+
+ecsf:task_Identify__monitor_and_assess_the_Tactics__Techniques_and_Pro a ecsf:Task ;
+    rdfs:label "Identify, monitor and assess the Tactics, Techniques and Procedures (TTPs) used  by cyber threat actors by analysing open-source and proprietary data, information  and intelligence" .
+
+ecsf:task_Identify__recover__extract__document_and_analyse_digital_evi a ecsf:Task ;
+    rdfs:label "Identify, recover, extract, document and analyse digital evidence" .
+
+ecsf:task_Identify_and_assess_cyber_threat_actors_targeting_the_organi a ecsf:Task ;
+    rdfs:label "Identify and assess cyber threat actors targeting the organisation" .
+
+ecsf:task_Identify_and_assess_cybersecurity_related_threats_and_vulner a ecsf:Task ;
+    rdfs:label "Identify and assess cybersecurity-related threats and vulnerabilities of ICT systems" .
+
+ecsf:task_Identify_and_document_compliance_gaps a ecsf:Task ;
+    rdfs:label "Identify and document compliance gaps" .
+
+ecsf:task_Identify_attack_vectors__uncover_and_demonstrate_exploitatio a ecsf:Task ;
+    rdfs:label "Identify attack vectors, uncover and demonstrate exploitation of technical  cybersecurity vulnerabilities" .
+
+ecsf:task_Identify_cross_sectoral_cybersecurity_achievements_and_apply a ecsf:Task ;
+    rdfs:label "Identify cross-sectoral cybersecurity achievements and apply them in a different  context or propose innovative approaches and solutions" .
+
+ecsf:task_Implement__apply_and_manage_patches_to_products_to_address_t a ecsf:Task ;
+    rdfs:label "Implement, apply and manage patches to products to address technical  vulnerabilities" .
+
+ecsf:task_Implement_cybersecurity_procedures_and_controls a ecsf:Task ;
+    rdfs:label "Implement cybersecurity procedures and controls" .
+
+ecsf:task_Implement_threat_intelligence_collection__analysis_and_produ a ecsf:Task ;
+    rdfs:label "Implement threat intelligence collection, analysis and production of actionable  intelligence and dissemination to security stakeholders" .
+
+ecsf:task_Inspect_environments_for_evidence_of_unauthorised_and_unlawf a ecsf:Task ;
+    rdfs:label "Inspect environments for evidence of unauthorised and unlawful actions" .
+
+ecsf:task_Integrate_cybersecurity_solutions_and_ensure_their_sound_ope a ecsf:Task ;
+    rdfs:label "Integrate cybersecurity solutions and ensure their sound operation" .
+
+ecsf:task_Lead_or_participate_in_the_innovation_processes_and_projects a ecsf:Task ;
+    rdfs:label "Lead or participate in the innovation processes and projects including project  management and budgeting" .
+
+ecsf:task_Leverage_intelligence_data_to_support_and_assist_with_threat a ecsf:Task ;
+    rdfs:label "Leverage intelligence data to support and assist with threat modelling,  recommendations for Risk Mitigation and cyber threat hunting" .
+
+ecsf:task_Maintain_and_protect_the_integrity_of_audit_records a ecsf:Task ;
+    rdfs:label "Maintain and protect the integrity of audit records" .
+
+ecsf:task_Maintain_and_upgrade_the_security_of_systems__services_and_p a ecsf:Task ;
+    rdfs:label "Maintain and upgrade the security of systems, services and products" .
+
+ecsf:task_Manage_an_inventory_of_organisation_s_assets a ecsf:Task ;
+    rdfs:label "Manage an inventory of organisation’s assets" .
+
+ecsf:task_Manage_continuous_capacity_building_within_the_organisation a ecsf:Task ;
+    rdfs:label "Manage continuous capacity building within the organisation" .
+
+ecsf:task_Manage_legal_aspects_of_information_security_responsibilitie a ecsf:Task ;
+    rdfs:label "Manage legal aspects of information security responsibilities and third-party relations" .
+
+ecsf:task_Management_practices a ecsf:Task ;
+    rdfs:label "Management practices" .
+
+ecsf:task_Manifest_and_generate_research_and_innovation_ideas a ecsf:Task ;
+    rdfs:label "Manifest and generate research and innovation ideas" .
+
+ecsf:task_Monitor__evaluate_and_report_training_effectiveness a ecsf:Task ;
+    rdfs:label "Monitor, evaluate and report training effectiveness" .
+
+ecsf:task_Monitor_advancement_in_cybersecurity a ecsf:Task ;
+    rdfs:label "Monitor advancement in cybersecurity" .
+
+ecsf:task_Monitor_and_assure_the_performance_of_the_implemented_cybers a ecsf:Task ;
+    rdfs:label "Monitor and assure the performance of the implemented cybersecurity controls" .
+
+ecsf:task_Monitor_audits_and_data_protection_related_training_activiti a ecsf:Task ;
+    rdfs:label "Monitor audits and data protection related training activities" .
+
+ecsf:task_Monitor_effectiveness_of_cybersecurity_controls_and_risk_lev a ecsf:Task ;
+    rdfs:label "Monitor effectiveness of cybersecurity controls and risk levels" .
+
+ecsf:task_Monitor_risk_remediation_activities a ecsf:Task ;
+    rdfs:label "Monitor risk remediation activities" .
+
+ecsf:task_Negotiate_the_cybersecurity_budget_with_the_senior_managemen a ecsf:Task ;
+    rdfs:label "Negotiate the cybersecurity budget with the senior management" .
+
+ecsf:task_Organise__design_and_deliver_cybersecurity_and_data_protecti a ecsf:Task ;
+    rdfs:label "Organise, design and deliver cybersecurity and data protection awareness-raising  activities, seminars, courses, practical training" .
+
+ecsf:task_Organise_test_plans_and_procedures_for_penetration_testing a ecsf:Task ;
+    rdfs:label "Organise test plans and procedures for penetration testing" .
+
+ecsf:task_Prepare_and_present_cybersecurity_vision__strategies_and_pol a ecsf:Task ;
+    rdfs:label "Prepare and present cybersecurity vision, strategies and policies for approval by the" .
+
+ecsf:task_Present_high_level_security_architecture_design_to_stakehold a ecsf:Task ;
+    rdfs:label "Present high-level security architecture design to stakeholders" .
+
+ecsf:task_Preserve_and_protect_digital_evidence_and_make_it_available_ a ecsf:Task ;
+    rdfs:label "Preserve and protect digital evidence and make it available to authorised  stakeholders" .
+
+ecsf:task_Produce_actionable_reports_based_on_threat_intelligence_data a ecsf:Task ;
+    rdfs:label "Produce actionable reports based on threat intelligence data" .
+
+ecsf:task_Produce_architectural_documentation_and_specifications a ecsf:Task ;
+    rdfs:label "Produce architectural documentation and specifications" .
+
+ecsf:task_Provide_cybersecurity_related_support_to_users_and_customers a ecsf:Task ;
+    rdfs:label "Provide cybersecurity-related support to users and customers" .
+
+ecsf:task_Provide_guidance_on_cybersecurity_certification_programs_for a ecsf:Task ;
+    rdfs:label "Provide guidance on cybersecurity certification programs for individuals" .
+
+ecsf:task_Publish_and_present_scientific_works_and_research_and_develo a ecsf:Task ;
+    rdfs:label "Publish and present scientific works and research and development results" .
+
+ecsf:task_Report_cybersecurity_incidents__risks__findings_to_the_senio a ecsf:Task ;
+    rdfs:label "Report cybersecurity incidents, risks, findings to the senior management" .
+
+ecsf:task_Resource_management a ecsf:Task ;
+    rdfs:label "Resource management" .
+
+ecsf:task_Review__plan_and_allocate_appropriate_cybersecurity_resource a ecsf:Task ;
+    rdfs:label "Review, plan and allocate appropriate cybersecurity resources" .
+
+ecsf:task_Review_target_of_evaluation__security_objectives_and_require a ecsf:Task ;
+    rdfs:label "Review target of evaluation, security objectives and requirements based on the risk  profile" .
+
+ecsf:task_Risk_management_standards__methodologies_and_frameworks a ecsf:Task ;
+    rdfs:label "Risk management standards, methodologies and frameworks" .
+
+ecsf:task_Secure_resources_to_implement_the_cybersecurity_strategy a ecsf:Task ;
+    rdfs:label "Secure resources to implement the cybersecurity strategy" .
+
+ecsf:task_Securely_configure_systems__services_and_products a ecsf:Task ;
+    rdfs:label "Securely configure systems, services and products" .
+
+ecsf:task_Select_and_apply_frameworks__methods__standards__tools_and_p a ecsf:Task ;
+    rdfs:label "Select and apply frameworks, methods, standards, tools and protocols including a  building and testing a proof of concept to support projects" .
+
+ecsf:task_Select_and_customise_forensics_testing__analysing_and_report a ecsf:Task ;
+    rdfs:label "Select and customise forensics testing, analysing and reporting techniques" .
+
+ecsf:task_Select_and_develop_appropriate_penetration_testing_technique a ecsf:Task ;
+    rdfs:label "Select and develop appropriate penetration testing techniques" .
+
+ecsf:task_Supervise_the_application_and_improvement_of_the_Information a ecsf:Task ;
+    rdfs:label "Supervise the application and improvement of the Information Security Management" .
+
+ecsf:task_System__ISMS_ a ecsf:Task ;
+    rdfs:label "System (ISMS)" .
+
+ecsf:task_Systematically_and_deterministic_document__report_and_presen a ecsf:Task ;
+    rdfs:label "Systematically and deterministic document, report and present digital forensic  analysis findings and results" .
+
+ecsf:task_Test_systems_and_operations_compliance_with_regulatory_stand a ecsf:Task ;
+    rdfs:label "Test systems and operations compliance with regulatory standards" .
+
+ecsf:task_Translate_business_requirements_into_Intelligence_Requiremen a ecsf:Task ;
+    rdfs:label "Translate business requirements into Intelligence Requirements" .
+
+ecsf:task_Work_close_with_the_IT_OT_personnel_on_cybersecurity_related a ecsf:Task ;
+    rdfs:label "Work close with the IT/OT personnel on cybersecurity-related actions" .
+
+ecsf:task_and_performance_of_the_organisation_s_architecture a ecsf:Task ;
+    rdfs:label "and performance of the organisation’s architecture" .
+
+ecsf:task_objectives a ecsf:Task ;
+    rdfs:label "objectives" .
+
+ecsf:task_senior_management_of_the_organisation_and_ensure_their_execu a ecsf:Task ;
+    rdfs:label "senior management of the organisation and ensure their execution" .
+
+ecsf:task_strategies__policies__aligned_with_the_business_strategy_to_ a ecsf:Task ;
+    rdfs:label "strategies, policies, aligned with the business strategy to support the organisational" .
+
+ecsf:task_the_organisation a ecsf:Task ;
+    rdfs:label "the organisation" .
+
+ecsf:knowledge_Cybersecurity_policies a ecsf:KnowledgeItem ;
+    rdfs:label "Cybersecurity policies" .
+
+ecsf:knowledge_Cybersecurity_risks a ecsf:KnowledgeItem ;
+    rdfs:label "Cybersecurity risks" .
+
+ecsf:knowledge_Monitoring__testing_and_evaluating_cybersecurity_controls__e a ecsf:KnowledgeItem ;
+    rdfs:label "Monitoring, testing and evaluating cybersecurity controls' effectiveness" .
+
+ecsf:knowledge_Responsible_information_disclosure_procedures a ecsf:KnowledgeItem ;
+    rdfs:label "Responsible information disclosure procedures" .
+
+ecsf:knowledge_Risk_management_standards__methodologies_and_frameworks a ecsf:KnowledgeItem ;
+    rdfs:label "Risk management standards, methodologies and frameworks" .
+
+ecsf:knowledge_Secure_development_lifecycle a ecsf:KnowledgeItem ;
+    rdfs:label "Secure development lifecycle" .
+
+ecsf:knowledge_Testing_procedures a ecsf:KnowledgeItem ;
+    rdfs:label "Testing procedures" .
+
+ecsf:skill_Apply_auditing_tools_and_techniques a ecsf:Skill ;
+    rdfs:label "Apply auditing tools and techniques" .
+
+ecsf:skill_Collect__analyse_and_correlate_cyber_threat_information_orig a ecsf:Skill ;
+    rdfs:label "Collect, analyse and correlate cyber threat information originating from multiple  sources" .
+
+ecsf:skill_Communicate__coordinate_and_cooperate_with_internal_and_exte a ecsf:Skill ;
+    rdfs:label "Communicate, coordinate and cooperate with internal and external stakeholders" .
+
+ecsf:skill_Conduct_technical_analysis_and_reporting a ecsf:Skill ;
+    rdfs:label "Conduct technical analysis and reporting" ;
+    ecsf:relatedTo ecsf:skill_Conduct_user_and_business_security_requirements_analysis .
+
+ecsf:skill_Conduct_user_and_business_security_requirements_analysis a ecsf:Skill ;
+    rdfs:label "Conduct user and business security requirements analysis" .
+
+ecsf:skill_Configure_solutions_according_to_the_organisation_s_security a ecsf:Skill ;
+    rdfs:label "Configure solutions according to the organisation’s security policy" ;
+    ecsf:relatedTo ecsf:skill_Assess_the_security_and_performance_of_solutions .
+
+ecsf:skill_Coordinate_the_integration_of_security_solutions a ecsf:Skill ;
+    rdfs:label "Coordinate the integration of security solutions" ;
+    ecsf:relatedTo ecsf:skill_Assess_the_security_and_performance_of_solutions,
+        ecsf:skill_Configure_solutions_according_to_the_organisation_s_security .
+
+ecsf:skill_Decompose_and_analyse_systems_to_develop_security_and_privac a ecsf:Skill ;
+    rdfs:label "Decompose and analyse systems to develop security and privacy requirements and  identify effective solutions" ;
+    ecsf:relatedTo ecsf:skill_Assess_the_security_and_performance_of_solutions,
+        ecsf:skill_Coordinate_the_integration_of_security_solutions,
+        ecsf:skill_Decompose_and_analyse_systems_to_identify_weaknesses_and_ine .
+
+ecsf:skill_Develop_code__scripts_and_programmes a ecsf:Skill ;
+    rdfs:label "Develop code, scripts and programmes" ;
+    ecsf:relatedTo ecsf:skill_Develop_codes__scripts_and_programmes .
+
+ecsf:skill_Develop_evaluation_programs_for_the_awareness__training_and_ a ecsf:Skill ;
+    rdfs:label "Develop evaluation programs for the awareness, training and education activities" .
+
+ecsf:skill_Influence_an_organisation_s_cybersecurity_culture a ecsf:Skill ;
+    rdfs:label "Influence an organisation’s cybersecurity culture" ;
+    ecsf:relatedTo ecsf:skill_Integrate_cybersecurity_solutions_to_the_organisation_s_infr,
+        ecsf:skill_Understand_legal_framework_modifications_implications_to_the .
+
+ecsf:skill_Integrate_cybersecurity_solutions_to_the_organisation_s_infr a ecsf:Skill ;
+    rdfs:label "Integrate cybersecurity solutions to the organisation’s infrastructure" .
+
+ecsf:skill_Model_threats__actors_and_TTPs a ecsf:Skill ;
+    rdfs:label "Model threats, actors and TTPs" .
+
+ecsf:skill_Motivate_and_encourage_people a ecsf:Skill ;
+    rdfs:label "Motivate and encourage people" .
+
+ecsf:skill_Understand_legal_framework_modifications_implications_to_the a ecsf:Skill ;
+    rdfs:label "Understand legal framework modifications implications to the organisation’s  cybersecurity and data protection strategy and policies" .
+
+ecsf:skill_Utilise_existing_cybersecurity_related_training_resources a ecsf:Skill ;
+    rdfs:label "Utilise existing cybersecurity-related training resources" .
+
+ecsf:knowledge_Computer_programming a ecsf:KnowledgeItem ;
+    rdfs:label "Computer programming" .
+
+ecsf:knowledge_Cybersecurity_related_technologies a ecsf:KnowledgeItem ;
+    rdfs:label "Cybersecurity-related technologies" .
+
+ecsf:knowledge_Legal__regulatory_and_legislative_compliance_requirements__r a ecsf:KnowledgeItem ;
+    rdfs:label "Legal, regulatory and legislative compliance requirements, recommendations and  best practices" .
+
+ecsf:skill_Communicate__explain_and_adapt_legal_and_regulatory_requirem a ecsf:Skill ;
+    rdfs:label "Communicate, explain and adapt legal and regulatory requirements and business needs" .
+
+ecsf:skill_Develop_codes__scripts_and_programmes a ecsf:Skill ;
+    rdfs:label "Develop codes, scripts and programmes" .
+
+ecsf:skill_Follow_and_practice_auditing_frameworks__standards_and_metho a ecsf:Skill ;
+    rdfs:label "Follow and practice auditing frameworks, standards and methodologies" ;
+    ecsf:relatedTo ecsf:skill_Implement_cybersecurity_risk_management_frameworks__methodol .
+
+ecsf:skill_Implement_cybersecurity_risk_management_frameworks__methodol a ecsf:Skill ;
+    rdfs:label "Implement cybersecurity risk management frameworks, methodologies and  guidelines and ensure compliance with regulations and standards" .
+
+ecsf:skill_Review_codes_assess_their_security a ecsf:Skill ;
+    rdfs:label "Review codes assess their security" .
+
+ecsf:knowledge_Computer_systems_vulnerabilities a ecsf:KnowledgeItem ;
+    rdfs:label "Computer systems vulnerabilities" .
+
+ecsf:knowledge_Cybersecurity_attack_procedures a ecsf:KnowledgeItem ;
+    rdfs:label "Cybersecurity attack procedures" .
+
+ecsf:skill_Collaborate_with_other_team_members_and_colleagues a ecsf:Skill ;
+    rdfs:label "Collaborate with other team members and colleagues" .
+
+ecsf:skill_Decompose_and_analyse_systems_to_identify_weaknesses_and_ine a ecsf:Skill ;
+    rdfs:label "Decompose and analyse systems to identify weaknesses and ineffective controls" .
+
+ecsf:skill_Identify_and_solve_cybersecurity_related_issues a ecsf:Skill ;
+    rdfs:label "Identify and solve cybersecurity-related issues" .
+
+ecsf:knowledge_Computer_networks_security a ecsf:KnowledgeItem ;
+    rdfs:label "Computer networks security" .
+
+ecsf:knowledge_Cyber_threats a ecsf:KnowledgeItem ;
+    rdfs:label "Cyber threats" .
+
+ecsf:knowledge_Cybersecurity_recommendations_and_best_practices a ecsf:KnowledgeItem ;
+    rdfs:label "Cybersecurity recommendations and best practices" .
+
+ecsf:knowledge_Cybersecurity_related_laws__regulations_and_legislations a ecsf:KnowledgeItem ;
+    rdfs:label "Cybersecurity related laws, regulations and legislations" .
+
+ecsf:knowledge_Operating_systems_security a ecsf:KnowledgeItem ;
+    rdfs:label "Operating systems security" .
+
+ecsf:skill_Assess_the_security_and_performance_of_solutions a ecsf:Skill ;
+    rdfs:label "Assess the security and performance of solutions" ;
+    ecsf:relatedTo ecsf:skill_Review_codes_assess_their_security .
+
+ecsf:knowledge_Cybersecurity_controls_and_solutions a ecsf:KnowledgeItem ;
+    rdfs:label "Cybersecurity controls and solutions" .
+
+ecsf:knowledge_Cybersecurity_standards__methodologies_and_frameworks a ecsf:KnowledgeItem ;
+    rdfs:label "Cybersecurity standards, methodologies and frameworks" .
+
+ecsf:skill_Communicate__present_and_report_to_relevant_stakeholders a ecsf:Skill ;
+    rdfs:label "Communicate, present and report to relevant stakeholders" .
+
+ecsf:knowledge_Cybersecurity_related_certifications a ecsf:KnowledgeItem ;
+    rdfs:label "Cybersecurity-related certifications" .
+
+ecsf:Role a owl:Class .
+
+ecsf:KnowledgeItem a owl:Class .
+
+ecsf:Skill a owl:Class .
+
+ecsf:Task a owl:Class .
+

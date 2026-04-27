@@ -1,0 +1,50 @@
+{
+  "stages_executed": [
+    "ingestion",
+    "framework_mapping",
+    "lo_extraction",
+    "assessment_extraction",
+    "soa",
+    "breadth",
+    "depth",
+    "progression",
+    "immersion",
+    "nlp",
+    "ontology",
+    "embeddings",
+    "scoring",
+    "validation",
+    "feedback",
+    "graph",
+    "reporting"
+  ],
+  "row_counts": {
+    "courses": 36,
+    "enisa_roles": 12,
+    "framework_items": 470,
+    "scores": 36,
+    "soa_entries": 7401
+  },
+  "timestamp": "2026-04-27T16:42:39.060934",
+  "elapsed_seconds": 40.6,
+  "artifacts": [
+    "README.md",
+    "ablation_results.csv",
+    "artifact_manifest.json",
+    "cybersecurity_education_kg.graphml",
+    "cybersecurity_education_kg_v2.graphml",
+    "ecsf_ontology.ttl",
+    "inter_program_redundancy.csv",
+    "kg_d3_data.json",
+    "kg_visualization.html",
+    "method_comparison.csv",
+    "pipeline_report.md",
+    "pipeline_summary.json",
+    "program_clusters.csv",
+    "recommendations.json",
+    "scores.csv",
+    "semantic_gap_items.csv",
+    "soa_flat.csv",
+    "validation_summary.json"
+  ]
+}
