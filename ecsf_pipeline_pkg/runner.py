@@ -2,7 +2,7 @@
 Runs the pipeline to reproduce all outputs
 
 Usage:
-    python -m ecsf_pipeline_pkg.runner [--config pipeline_config.json]
+    python -m ecsf_pipeline_pkg.runner
     python run_pipeline.py
 """
 
@@ -16,17 +16,7 @@ from ecsf_pipeline_pkg.orchestrator import AnalyticsPipeline
 
 
 def main():
-    parser = argparse.ArgumentParser(
-        description="ECSF Cybersecurity Education Analytics Pipeline"
-    )
-    args = parser.parse_args()
-
-    if args.config and Path(args.config).exists():
-        config = PipelineConfig.load(args.config)
-    else:
-        config = PipelineConfig()
-
-    config.output_dir = args.output_dir
+    config = PipelineConfig()
 
     pipeline = AnalyticsPipeline(config)
     summary = pipeline.run()
