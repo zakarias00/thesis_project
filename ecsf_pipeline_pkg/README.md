@@ -19,7 +19,7 @@ ecsf_pipeline_pkg/
 │   ├── ingestion.py       # CSV/RDF data loading
 │   ├── framework_mapping.py  # ECSF, NICE, JRC role matching
 │   ├── extraction.py      # Learning outcome & assessment extraction
-│   ├── soa.py             # State-of-the-Art matrix construction
+│   ├── soa.py             # Skill-Outcome-Assessment matrix construction
 │   ├── analysis.py        # Breadth, depth, progression, immersion
 │   ├── semantic.py        # NLP, ontology alignment, embeddings
 │   └── feedback.py        # Curriculum recommendations
@@ -62,7 +62,7 @@ python -m ecsf_pipeline_pkg
 Results are written to `pipeline_output/`:
 
 - `scores.csv` — composite quality scores per program
-- `soa_flat.csv` — flattened State-of-the-Art matrix
+- `soa_flat.csv` — flattened Skill-Outcome-Assessment matrix
 - `recommendations.json` — per-program improvement suggestions
 - `cybersecurity_education_kg.graphml` — knowledge graph (v2)
 - `pipeline_summary.json` — run metadata
