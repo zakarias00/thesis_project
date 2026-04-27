@@ -25,8 +25,6 @@ The project has **two main parts**:
 | **pip** | latest | Comes with Python |
 | **Git** | any | To clone the repo |
 | **Neo4j** | 5.x | *Optional* — only needed for the graph database scripts in `data_preprocessing/embeddings/` |
-| **RAM** | ≥ 8 GB | Embedding generation and NLP stages are memory-intensive |
-| **Disk** | ~ 2 GB free | For model downloads (sentence-transformers, spaCy) |
 
 ---
 
