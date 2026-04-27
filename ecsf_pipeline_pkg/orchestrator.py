@@ -115,8 +115,8 @@ class AnalyticsPipeline:
         self.validation_summary: dict = {}
         self._run_metadata: dict = {}
 
+    # Execute the full pipeline.  Returns metadata summary
     def run(self) -> dict:
-        """Execute the full pipeline.  Returns metadata summary."""
         start = datetime.now()
         logger.info("Pipeline start")
         cfg = self.config
