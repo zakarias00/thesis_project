@@ -74,10 +74,9 @@ thesis_project/
 │   ├── recommendations.json       #   Per-program suggestions
 │   ├── cybersecurity_education_kg_v2.graphml  # Knowledge graph
 │   ├── kg_visualization.html      #   Interactive graph viewer
-│   └── ...                        #   Many more result files
+│   └── ...                        #   More result files
 │
-├── figures/                       # Exported figures for the thesis
-└── RUNNING_GUIDE.md               # ← You are here
+└── figures/                       # Exported figures for the thesis
 ```
 
 ---
@@ -265,38 +264,7 @@ python -m ecsf_pipeline_pkg
 
 This runs **all stages** with default configuration and writes results to `pipeline_output/`.
 
-### 7.2 Custom Configuration
-
-You can override all settings via a JSON config file:
-
-```bash
-python -m ecsf_pipeline_pkg --config pipeline_config.json --output-dir my_results/
-```
-
-**To create a default config file you can edit:**
-
-```python
-from ecsf_pipeline_pkg.config import PipelineConfig
-config = PipelineConfig()
-config.save("my_config.json")
-```
-
-Key configuration options in `config.py`:
-
-| Parameter | Default | Description |
-|-----------|---------|-------------|
-| `courses_csv` | `course detail description.csv` | Path to the course dataset |
-| `enisa_csv` | `enisa_skill_set.csv` | Path to ENISA skill profiles |
-| `nice_csv` | `NICE Framework Components v2.1.0.csv` | Path to NICE framework |
-| `jrc_rdf` | `cybersecurity-taxonomy-skos-ap-eu.rdf` | Path to JRC taxonomy |
-| `output_dir` | `pipeline_output` | Where to write results |
-| `run_embeddings` | `True` | Enable/disable embedding stage |
-| `run_nlp` | `True` | Enable/disable NLP stage |
-| `run_graph` | `False` | Enable/disable graph construction |
-| `embedding_model` | `all-MiniLM-L6-v2` | Sentence transformer model name |
-| `spacy_model` | `en_core_web_sm` | spaCy model for NLP |
-
-### 7.3 Understanding the Pipeline Stages
+### 7.2 Pipeline Stages
 
 The pipeline runs 17 stages in sequence:
 
