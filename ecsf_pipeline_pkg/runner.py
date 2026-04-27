@@ -11,6 +11,8 @@ from __future__ import annotations
 import argparse
 import sys
 from pathlib import Path
+from ecsf_pipeline_pkg.config import PipelineConfig
+from ecsf_pipeline_pkg.orchestrator import AnalyticsPipeline
 
 
 def main():
@@ -18,9 +20,6 @@ def main():
         description="ECSF Cybersecurity Education Analytics Pipeline"
     )
     args = parser.parse_args()
-
-    from thesis_project.ecsf_pipeline_pkg.config import PipelineConfig
-    from thesis_project.ecsf_pipeline_pkg.orchestrator import AnalyticsPipeline
 
     if args.config and Path(args.config).exists():
         config = PipelineConfig.load(args.config)
