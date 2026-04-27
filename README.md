@@ -276,7 +276,7 @@ The pipeline runs 17 stages in sequence:
 | 6 | **Cross-Framework Alignment** | `stages/framework_mapping.py` | Align ECSF ↔ NICE ↔ JRC |
 | 7 | **LO Extraction** | `stages/extraction.py` | Extract learning outcomes from descriptions |
 | 8 | **Assessment Extraction** | `stages/extraction.py` | Detect assessment methods (lab, exam, project…) |
-| 9 | **SoA Matrix** | `stages/soa.py` | Build State-of-the-Art alignment matrix |
+| 9 | **SoA Matrix** | `stages/soa.py` | Build Skill-Outcome-Asessment matrix |
 | 10 | **Breadth Analysis** | `stages/analysis.py` | Coverage breadth across framework roles |
 | 11 | **Depth Analysis** | `stages/analysis.py` | Coverage depth per skill/competency |
 | 12 | **Progression Analysis** | `stages/analysis.py` | Bloom's taxonomy progression coherence |
@@ -295,7 +295,7 @@ After a successful run, `pipeline_output/` contains:
 | File | Format | Description |
 |------|--------|-------------|
 | `scores.csv` | CSV | Composite quality scores for all 36 programs |
-| `soa_flat.csv` | CSV | Flattened State-of-the-Art alignment matrix |
+| `soa_flat.csv` | CSV | Flattened Skill-Outcome-Assessment matrix |
 | `recommendations.json` | JSON | Per-program curriculum improvement suggestions |
 | `cybersecurity_education_kg_v2.graphml` | GraphML | Knowledge graph (ECSF + NICE + JRC) |
 | `cybersecurity_education_kg.graphml` | GraphML | Knowledge graph (ECSF core only) |
