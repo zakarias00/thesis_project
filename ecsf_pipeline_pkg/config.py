@@ -10,15 +10,16 @@ from dataclasses import dataclass, field, asdict
 from pathlib import Path
 
 logger = logging.getLogger("ecsf_pipeline")
+PACKAGE_DIR = Path(__file__).resolve().parent
 
 
 @dataclass
 class PipelineConfig:
     
-    courses_csv: str = "course detail description.csv"
-    enisa_csv: str = "enisa_skill_set.csv"
-    nice_csv: str = "NICE Framework Components v2.1.0.csv"
-    jrc_rdf: str = "cybersecurity-taxonomy-skos-ap-eu.rdf"
+    courses_csv: str = "input_data/course detail description.csv"
+    enisa_csv: str = "input_data/enisa_skill_set.csv"
+    nice_csv: str = "input_data/NICE Framework Components v2.1.0.csv"
+    jrc_rdf: str = "input_data/cybersecurity-taxonomy-skos-ap-eu.rdf"
 
     reference_year: int = 2026
 
@@ -155,6 +156,35 @@ class PipelineConfig:
 
     output_dir: str = "pipeline_output"
     report_format: str = "markdown"
+
+    def __post_init__(self) -> None:
+        self.courses_csv = self._resolve_input_path(self.courses_csv)
+        self.enisa_csv = self._resolve_input_path(self.enisa_csv)
+        self.nice_csv = self._resolve_input_path(self.nice_csv)
+        self.jrc_rdf = self._resolve_input_path(self.jrc_rdf)
+
+    @staticmethod
+    def _resolve_input_path(path_value: str) -> str:
+        p = Path(path_value).expanduser()
+        if p.is_absolute():
+            return str(p)
+
+        candidate_roots = [
+            Path.cwd(),
+            PACKAGE_DIR,
+            PACKAGE_DIR.parent,
+            PACKAGE_DIR.parent.parent,
+        ]
+
+        candidates = [root / p for root in candidate_roots]
+        if p.parent == Path("."):
+            candidates.extend((root / "input_data" / p for root in candidate_roots))
+        
+        for candidate in candidates:
+            if candidate.exists():
+                return str(candidate.resolve())
+
+        return str((PACKAGE_DIR / p).resolve())
 
 
     def save(self, path: str = "pipeline_config.json") -> None:
