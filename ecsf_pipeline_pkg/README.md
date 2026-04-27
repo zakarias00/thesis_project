@@ -24,8 +24,7 @@ ecsf_pipeline_pkg/
 │   ├── semantic.py        # NLP, ontology alignment, embeddings
 │   └── feedback.py        # Curriculum recommendations
 ├── utils/
-│   └── reporting.py       # File export (CSV, JSON, Markdown)
-└── tests/
+    └──  reporting.py       # File export (CSV, JSON, Markdown)
 ```
 
 ## Setup
@@ -56,13 +55,11 @@ Place these files in the working directory (or configure paths via `pipeline_con
 # Full pipeline
 python -m ecsf_pipeline_pkg
 
-# Custom config
-python -m ecsf_pipeline_pkg --config pipeline_config.json --output-dir results/
 ```
 
 ## Output
 
-Results are written to `pipeline_output/` (configurable):
+Results are written to `pipeline_output/`:
 
 - `scores.csv` — composite quality scores per program
 - `soa_flat.csv` — flattened State-of-the-Art matrix
