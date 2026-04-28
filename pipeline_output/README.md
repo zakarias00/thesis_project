@@ -20,5 +20,5 @@ Auto-generated artefacts from the ECSF analytics pipeline.
 
 ```bash
 cd ..
-python -m ecsf_pipeline_pkg --output-dir pipeline_output
+python -m ecsf_pipeline_pkg
 ```
