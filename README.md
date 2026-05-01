@@ -32,6 +32,8 @@ The project has **two main parts**:
 
 ```
 thesis_project/
+├── run_pipeline.py                # Convenience script (calls ecsf_pipeline_pkg.runner)
+│
 ├── data_preprocessing/            # Part A: Data exploration & preparation
 │   ├── courses_dataset.csv        #   Raw course descriptions (36 programs)
 │   ├── enisa_skill_set.csv        #   ENISA ECSF skill/role profiles
@@ -56,27 +58,78 @@ thesis_project/
 │       └── viewer.html            #     Browser-based ontology viewer
 │
 ├── ecsf_pipeline_pkg/             # Part B: Main analytics pipeline
+│   ├── __init__.py
 │   ├── __main__.py                #   Entry point (python -m ecsf_pipeline_pkg)
-│   ├── runner.py                  #   CLI argument parsing
-│   ├── config.py                  #   PipelineConfig dataclass
+│   ├── runner.py                  #   CLI entry point
+│   ├── config.py                  #   PipelineConfig dataclass (30+ parameters)
 │   ├── orchestrator.py            #   Main pipeline logic (17 stages)
-│   ├── schemas.py                 #   Data models & standardization
+│   ├── schemas.py                 #   Data models, standardization, FrameworkItem builders
+│   ├── input_data/                #   Bundled input datasets (auto-resolved)
+│   │   ├── course detail description.csv
+│   │   ├── enisa_skill_set.csv
+│   │   ├── NICE Framework Components v2.1.0.csv
+│   │   └── cybersecurity-taxonomy-skos-ap-eu.rdf
 │   ├── stages/                    #   Individual pipeline stages
+│   │   ├── ingestion.py           #     CSV/RDF data loading
+│   │   ├── framework_mapping.py   #     ECSF, NICE, JRC matching + cross-alignment
+│   │   ├── extraction.py          #     Learning outcome & assessment extraction
+│   │   ├── soa.py                 #     Skill-Outcome-Assessment matrix
+│   │   ├── analysis.py            #     Breadth, depth, progression, immersion
+│   │   ├── semantic.py            #     NLP, ontology alignment, embeddings
+│   │   └── feedback.py            #     Curriculum recommendations
 │   ├── scoring/                   #   Quality scoring & validation
+│   │   ├── quality_scores.py      #     Coverage, redundancy, depth, latency, composite
+│   │   └── validation.py          #     Ablation, rank correlation, method comparison
 │   ├── graph/                     #   Knowledge graph construction
+│   │   ├── graph_pipeline.py      #     KG build + GraphML export
+│   │   └── convert_graphml_to_d3.py  #  GraphML → D3 JSON + PNG/SVG subgraphs
 │   ├── utils/                     #   Reporting / file export
+│   │   └── reporting.py           #     CSV, JSON, Markdown, manifest export
 │   └── requirements.txt           #   Python dependencies for Part B
 │
 ├── pipeline_output/               # Pre-generated pipeline results
-│   ├── scores.csv                 #   Composite quality scores
+│   ├── scores.csv                 #   Composite quality scores (all 36 programs)
+│   ├── soa_flat.csv               #   Flattened Skill-Outcome-Assessment matrix
 │   ├── recommendations.json       #   Per-program suggestions
-│   ├── cybersecurity_education_kg_v2.graphml  # Knowledge graph
+│   ├── cybersecurity_education_kg.graphml     # Knowledge graph (ECSF+NICE+JRC)
+│   ├── kg_d3_data.json            #   D3.js-compatible JSON
 │   ├── kg_visualization.html      #   Interactive graph viewer
-│   └── ...                        #   More result files
+│   ├── validation_summary.json    #   Ablation & cross-validation results
+│   ├── ablation_results.csv       #   Ablation experiments
+│   ├── method_comparison.csv      #   Scoring method comparison (Jaccard)
+│   ├── inter_program_redundancy.csv  # Redundancy analysis
+│   ├── semantic_gap_items.csv     #   Semantic coverage gaps
+│   ├── program_clusters.csv       #   Embedding-based clusters
+│   ├── ecsf_ontology.ttl          #   ECSF ontology (RDF/Turtle)
+│   ├── pipeline_summary.json      #   Run metadata
+│   ├── pipeline_report.md         #   Human-readable summary
+│   ├── artifact_manifest.json     #   Inventory of generated files
+│   └── graph_figures/             #   Subgraph PNG/SVG exports
+│       ├── kg_overview.png/.svg
+│       ├── kg_ecsf_roles.png/.svg
+│       ├── kg_nice_framework.png/.svg
+│       ├── kg_universities.png/.svg
+│       ├── kg_jrc_taxonomy.png/.svg
+│       ├── kg_role_program.png/.svg
+│       └── kg_full_readable.png/.svg
 │
 └── figures/                       # Exported figures for the thesis
+    ├── leaderboard.png            #   Program ranking leaderboard
+    ├── four_dimensions.png        #   4-dimension analysis overview
+    ├── radar_4d.png               #   4-dimension radar chart
+    ├── radar_top5.png             #   Top-5 programs radar chart
+    ├── coverage_vs_depth.png      #   Coverage vs depth scatter
+    ├── bloom_analysis.png         #   Bloom's taxonomy analysis
+    ├── soa_analysis.png           #   SOA matrix analysis
+    ├── ablation.png               #   Ablation study
+    ├── correlation.png            #   Score correlation matrix
+    ├── clusters.png               #   Program clusters
+    ├── geographic.png             #   Geographic distribution
+    ├── redundancy.png             #   Inter-program redundancy
+    ├── semantic_gaps.png          #   Semantic gap analysis
+    ├── recommendations.png        #   Recommendation summary
+    └── cybersecurity_education_kg.png/.svg   # Knowledge Graph render
 ```
-
 ---
 
 ## 4. Environment Setup
@@ -139,7 +192,7 @@ The pipeline expects **four input files**
 
 - `courses_dataset.csv`:  36 European cybersecurity Master's program descriptions
 - `enisa_skill_set.csv`: ENISA ECSF role profiles and skills
-- `NICE Framework Components v2.1.0.csv` - NIST NICE work roles |
+- `NICE Framework Components v2.1.0.csv` - NIST NICE work roles
 - `cybersecurity-taxonomy-skos-ap-eu.rdf` - JRC cybersecurity taxonomy (SKOS/RDF)
 
 ---
@@ -296,9 +349,8 @@ After a successful run, `pipeline_output/` contains:
 |------|--------|-------------|
 | `scores.csv` | CSV | Composite quality scores for all 36 programs |
 | `soa_flat.csv` | CSV | Flattened Skill-Outcome-Assessment matrix |
-| `recommendations.json` | JSON | Per-program curriculum improvement suggestions |
-| `cybersecurity_education_kg_v2.graphml` | GraphML | Knowledge graph (ECSF + NICE + JRC) |
-| `cybersecurity_education_kg.graphml` | GraphML | Knowledge graph (ECSF core only) |
+| `recommendations.json` | JSON | Per-program curriculum improvement suggestions ||
+| `cybersecurity_education_kg.graphml` | GraphML | Knowledge graph (ECSF + NICE + JRC) |
 | `kg_d3_data.json` | JSON | D3.js-compatible data for interactive visualization |
 | `kg_visualization.html` | HTML | Interactive force-directed graph — open in browser |
 | `pipeline_summary.json` | JSON | Run metadata (timestamp, stage timings, counts) |
@@ -311,6 +363,27 @@ After a successful run, `pipeline_output/` contains:
 | `inter_program_redundancy.csv` | CSV | Redundancy analysis across programs |
 | `ecsf_ontology.ttl` | Turtle | Generated ECSF ontology in RDF/Turtle |
 | `artifact_manifest.json` | JSON | Inventory of all generated files |
+
+## Graph Figures
+
+After running the graph visualisation step, `pipeline_output/graph_figures/` contains:
+
+| File | Description |
+|------|-------------|
+| `kg_d3_data.json` | D3-force-compatible JSON |
+| `kg_overview.png/.svg` | Structural overview |
+| `kg_ecsf_roles.png/.svg` | ECSF roles + skills/knowledge |
+| `kg_nice_framework.png/.svg` | NICE categories & work roles |
+| `kg_universities.png/.svg` | Universities, programs & countries |
+| `kg_jrc_taxonomy.png/.svg` | JRC domains & concepts |
+| `kg_role_program.png/.svg` | Role–program alignment |
+| `kg_full_readable.png/.svg` | Readable subset of the full graph |
+
+Generate them with:
+
+```bash
+python -m ecsf_pipeline_pkg.graph.convert_graphml_to_d3
+```
 
 **To view the interactive knowledge graph:**
 
@@ -334,6 +407,10 @@ python -m ecsf_pipeline_pkg
 
 # 3. View results
 cat pipeline_output/pipeline_report.md
+
+# 4. Generate graph figures
+python -m ecsf_pipeline_pkg.graph.convert_graphml_to_d3
+
 python -m http.server 8000 -d pipeline_output
 # Open http://localhost:8000/kg_visualization.html
 ```
